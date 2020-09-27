@@ -204,6 +204,148 @@ select trunc(1000 * (lp.mid_rpy_fee_rate / 100) * a.left_days / a.term_days) as 
 	      	  where lh.loan_no = 277793) a, loan_prod lp
 		where a.prod_no = lp.prod_no;
 select * from loan_history where loan_status = 'I';
+
+
+-- 지도 그래프 생성을 위한 신청데이터 지점명 변경
+update loan_app set branch_nm = '제주특별자치도' where branch_nm = '제주';
+
+
+select branch_nm, count(*) from loan_app group by branch_nm;
+
+select * from accountant;
+
+select * 
+from corp
+where (
+    select bizr_no
+    from acc_auth aa, accountant acc
+    where aa.acc_no = acc.acc_no and acc.acc_no = '0000') = corp.bizr_no;
+
+-- 여러행 삭제 
+delete from loan_app 
+where (bizr_no, app_no) 
+in (
+    select bizr_no, app_no 
+    from loan_app 
+    where bizr_no = '2208114806' and app_no = 12
+    );
+    
+delete from loan_history 
+where (bizr_no, loan_no) 
+in (
+    select bizr_no, loan_no 
+    from loan_app 
+    where bizr_no = '2208114806' and loan_no > 67283
+    );
+update loan_app set auto_interest_trans = 'Y' where app_no = '200017';
+commit;
+
+
+select name, a.*
+		from (select app_no, loan_type, loan_acnt, interest_acnt, ass_type, branch_nm,
+            to_char(app_date, 'yyyy-mm-dd') as app_date, app_amount, app_month, loan_app_status,
+            la.prod_no, empno, bizr_no, interest_date, auto_interest_trans
+      		from loan_app la
+      		where empno = '322') a, loan_prod lp
+		where a.prod_no = lp.prod_no and a.loan_app_status = 'FW'
+		order by app_no;
+        
+ select (a.pcpl_amt - a.left_amt) / a.pcpl_amt * 100 as rpyRate, 
+		trunc(a.pcpl_amt * (a.interest / 100 / 12 * a.loan_mons / decode(a.loan_mons, 0, 1, a.loan_mons))) as interestAmt, a.*,
+		(select name 
+		 from loan_prod
+		 where prod_no = a.prod_no) as prod_name
+		from (select loan_no, loan_type, to_char(start_date, 'yyyy-mm-dd') as start_date, left_amt, trunc((fin_date - start_date)/30) as loan_mons,
+			  		 to_char(fin_date, 'yyyy-mm-dd') as fin_date, pcpl_amt, interest, loan_acnt, 
+			  		 interest_acnt, interest_date, ass_type, loan_status, empno, prod_no, bizr_no
+      		  from loan_history) a
+        where empno = '322'
+        order by start_date;       
+select *
+		from (select rownum as rnum, a.*
+      		  from (select name, a.*
+                    from (select app_no, loan_type, loan_acnt, interest_acnt, ass_type, branch_nm,
+                          to_char(app_date, 'yyyy-mm-dd') as app_date, app_amount, app_month, loan_app_status,
+                          la.prod_no, empno, bizr_no, interest_date, auto_interest_trans
+                          from loan_app la
+                          where empno = '322'
+                          order by app_no desc) a, loan_prod lp
+                    where a.prod_no = lp.prod_no and a.loan_app_status = 'FW') a
+              where rownum <= 5*1)
+         where rnum > 5*(1-1)
+         order by app_no desc;
+         
+select * from loan_app where empno = '322' order by app_no desc;
+update loan_app set loan_app_status = 'FW' where app_no = '200017';
+commit;
+select * from loan_app where app_no = '200017';
+
+
+select bizr_no, pw, name, name_eng, jurir_no, corp_cls, induty_code, adres, hm_url, country_code,
+			   phn_no, country_code_fax, fax_no, to_char(est_dt, 'yyyy-mm-dd') as est_dt, acc_mt
+		from corp
+		where bizr_no in (
+		    select bizr_no
+		    from acc_auth aa, accountant acc
+		    where aa.acc_no = acc.acc_no and acc.acc_no = '0000');
+            
+select * from icm_stmt where bizr_no = '2208114806';
+select bizr_no from corp where name ='삼성전자(주)';  
+
+select bizr_no, acc_no, to_char(auth_req_date, 'yyyy-mm-dd') as auth_req_date, 
+        to_char(auth_date, 'yyyy-mm-dd') as auth_date, auth_status
+from acc_auth
+where acc_no = '0000' and auth_status = 'W';
+        
+select a.*, name
+from (select bizr_no, acc_no, to_char(auth_req_date, 'yyyy-mm-dd') as auth_req_date, 
+        to_char(auth_date, 'yyyy-mm-dd') as auth_date, auth_status
+      from acc_auth
+      where acc_no = '0000' and auth_status = 'W') a, corp
+where corp.bizr_no = a.bizr_no;
+
+select a.*, name
+		from (select bizr_no, acc_no, to_char(auth_req_date, 'yyyy-mm-dd') as auth_req_date, 
+        	to_char(auth_date, 'yyyy-mm-dd') as auth_date, auth_status
+      		from acc_auth
+      		where acc_no = '0000' and auth_status = 'W') a, accountant
+		where accountant.acc_no = a.acc_no;
+select sum(bytes)/1024/1024/1024 from dba_data_files;        
+desc acc_auth
+select * from acc_auth;
+select * from loan_prod;
+select * from corp;            
+select * from acc_auth;
+insert into acc_auth values('2208114806', '0000', sysdate, sysdate, 'C');
+select * from loan_doc;
+delete from loan_doc where app_
+select * from loan_app where bizr_no = '2208114806';    
+commit; 
+select count(*) from loan_history where bizr_no = '2208114806';
+update loan_app set empno = '322' where app_no = '200017';
+select count(*) from loan_history;
+select * from bank_emp where empno = '34';
+update bank_emp set pw = '11111111' where empno = '34';
+desc corp
+select * 
+select app_no 
+              from loan_app 
+              where bizr_no = '2208114806' and app_no > 51031;
+select a.*
+        from (select rownum as rownumber, loan_app.* 
+              from loan_app 
+              where bizr_no = '2208114806') a
+        where rownumber >= 10;
+rollback;
+select count(*) from loan_app;
+declare
+
+begin
+
+end;
+/
+delete from loan_app where bizr_no='2208114806';
+
 commit;
 desc loan_app
 select * from icm_stmt where bizr_no = '2208114806';

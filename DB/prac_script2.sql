@@ -63,9 +63,45 @@ alter table loan_app add (auto_interest_trans varchar2(1));
 alter table loan_app add (interest_date NUMBER);
 alter table transaction modify (main_acnt_no not null);
 alter table transaction modify (balance not null);
-
+alter table loan_history add (focus_loan varchar2(1) default 'N');
+alter table loan_history modify (focus_loan default 'N');
+alter table loan_history drop column focus_corp;
+alter table loan_history drop column focus_loan;
+alter table induty_code rename column col to code;
+alter table induty_code rename column col3 to induty;
+alter table corp drop column corp_code;
 
 -- 테이블변경 ----------------------------------------------------------------------------------- 테이블변경 ---------------------------------------------------------------------------------
+select * from loan_history where loan_no = '544';
+commit;
+
+select count(*)
+from(
+    SELECT DISTINCT i.bizr_no, i.turn, i.sales, i.busi_profits, i.net_incm, f.curr_ast, f.non_curr_ast,
+    f.ttl_ast, f.curr_liab, f.non_curr_liab, f.ttl_liab, f.capital, f.ernd_splus, f.ttl_capital,
+    c.sales_cf, c.fin_cf, c.invst_cf
+    from icm_stmt i, fs_status f, cash_flow c, loan_history lh
+    where i.bizr_no = f.bizr_no and f.bizr_no = c.bizr_no AND i.turn = f.turn AND f.turn = c.turn
+    ORDER BY i.turn) a, loan_history lh
+where a.bizr_no = lh.bizr_no;
+
+
+SELECT DISTINCT i.bizr_no, i.turn, i.sales, i.busi_profits, i.net_incm, f.curr_ast, f.non_curr_ast,
+    f.ttl_ast, f.curr_liab, f.non_curr_liab, f.ttl_liab, f.capital, f.ernd_splus, f.ttl_capital,
+    c.sales_cf, c.fin_cf, c.invst_cf
+    from icm_stmt i, fs_status f, cash_flow c, loan_history lh
+    where i.bizr_no = f.bizr_no and f.bizr_no = c.bizr_no AND i.turn = f.turn AND f.turn = c.turn
+    ORDER BY i.turn;
+    
+select lh.bizr_no, loan_type, pcpl_amt, interest, i.*, f.*
+from loan_history lh, icm_stmt i, fs_status f
+where extract(year from start_date) = '2019' and lh.bizr_no = i.bizr_no and i.turn = f.turn;
+    
+    
+
+
+
+desc induty_code
 select * from loan_app;
 update loan_app set auto_interest_trans = 'Y' where auto_interest_trans != 'Y';
 select * from acnt;
