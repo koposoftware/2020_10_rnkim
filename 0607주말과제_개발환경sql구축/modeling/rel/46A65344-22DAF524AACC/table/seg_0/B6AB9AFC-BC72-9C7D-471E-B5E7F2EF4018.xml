@@ -1,0 +1,106 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_0" id="B6AB9AFC-BC72-9C7D-471E-B5E7F2EF4018" schemaObject="46EDA0A3-B1D4-46E7-96DB-5EAB25FE3991" name="CODE">
+<sourceConnName>docker-SCOTT</sourceConnName>
+<sourceObjSchema>SCOTT</sourceObjSchema>
+<sourceObjName>CODE</sourceObjName>
+<createdBy>linakim</createdBy>
+<createdTime>2020-06-07 12:48:53 UTC</createdTime>
+<commentInRDBMS><![CDATA[코드]]></commentInRDBMS>
+<ownerDesignName>modeling</ownerDesignName>
+<allowColumnReorder>false</allowColumnReorder>
+<existDependencyGenerateInDDl>true</existDependencyGenerateInDDl>
+<parsed>true</parsed>
+<columns itemClass="oracle.dbtools.crest.model.design.relational.Column">
+<Column name="ATT" id="C872FF90-8974-0103-4189-FB14FFAA37A2">
+<sourceConnName>docker-SCOTT</sourceConnName>
+<sourceObjSchema>CODE</sourceObjSchema>
+<sourceObjName>ATT</sourceObjName>
+<createdBy>linakim</createdBy>
+<createdTime>2020-06-07 12:48:54 UTC</createdTime>
+<commentInRDBMS><![CDATA[속성]]></commentInRDBMS>
+<ownerDesignName>modeling</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>20 BYTE</dataTypeSize>
+<ownDataTypeParameters>20 BYTE,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="CODE" id="1757B1B3-D437-1A6C-F52F-7336A5DD1892">
+<sourceConnName>docker-SCOTT</sourceConnName>
+<sourceObjSchema>CODE</sourceObjSchema>
+<sourceObjName>CODE</sourceObjName>
+<createdBy>linakim</createdBy>
+<createdTime>2020-06-07 12:48:54 UTC</createdTime>
+<commentInRDBMS><![CDATA[코드]]></commentInRDBMS>
+<ownerDesignName>modeling</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>20 BYTE</dataTypeSize>
+<ownDataTypeParameters>20 BYTE,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="TBL" id="BF1EB7F8-6039-8C82-4F89-08882378255D">
+<sourceConnName>docker-SCOTT</sourceConnName>
+<sourceObjSchema>CODE</sourceObjSchema>
+<sourceObjName>TBL</sourceObjName>
+<createdBy>linakim</createdBy>
+<createdTime>2020-06-07 12:48:54 UTC</createdTime>
+<commentInRDBMS><![CDATA[테이블]]></commentInRDBMS>
+<ownerDesignName>modeling</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>20 BYTE</dataTypeSize>
+<ownDataTypeParameters>20 BYTE,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="NAME" id="15B2FA03-7EBC-0037-0037-FCF0C8D13E59">
+<sourceConnName>docker-SCOTT</sourceConnName>
+<sourceObjSchema>CODE</sourceObjSchema>
+<sourceObjName>NAME</sourceObjName>
+<createdBy>linakim</createdBy>
+<createdTime>2020-06-07 12:48:54 UTC</createdTime>
+<commentInRDBMS><![CDATA[코드이름]]></commentInRDBMS>
+<ownerDesignName>modeling</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>100 BYTE</dataTypeSize>
+<ownDataTypeParameters>100 BYTE,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+</columns>
+<indexes itemClass="oracle.dbtools.crest.model.design.relational.Index">
+<ind_PK_UK id="4C2677CA-66AD-1006-1AF4-7FAB6F6EED45" name="PK_CODE">
+<sourceConnName>docker-SCOTT</sourceConnName>
+<sourceObjSchema>SCOTT</sourceObjSchema>
+<sourceObjName>PK_CODE</sourceObjName>
+<createdBy>linakim</createdBy>
+<createdTime>2020-06-07 12:48:57 UTC</createdTime>
+<ownerDesignName>modeling</ownerDesignName>
+<pk>true</pk>
+<indexState>Primary Constraint</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="C872FF90-8974-0103-4189-FB14FFAA37A2"/>
+<colUsage columnID="1757B1B3-D437-1A6C-F52F-7336A5DD1892"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="1036F714-4B87-6657-8E1F-F4B4CCB4ACA0" schemaObject="46EDA0A3-B1D4-46E7-96DB-5EAB25FE3991" name="PK_CODE">
+<sourceConnName>docker-SCOTT</sourceConnName>
+<sourceObjSchema>SCOTT</sourceObjSchema>
+<sourceObjName>PK_CODE</sourceObjName>
+<createdBy>linakim</createdBy>
+<createdTime>2020-06-07 12:48:55 UTC</createdTime>
+<ownerDesignName>modeling</ownerDesignName>
+<indexState>Unique Plain Index</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="C872FF90-8974-0103-4189-FB14FFAA37A2"/>
+<colUsage columnID="1757B1B3-D437-1A6C-F52F-7336A5DD1892"/>
+</indexColumnUsage>
+</ind_PK_UK>
+</indexes>
+</Table>

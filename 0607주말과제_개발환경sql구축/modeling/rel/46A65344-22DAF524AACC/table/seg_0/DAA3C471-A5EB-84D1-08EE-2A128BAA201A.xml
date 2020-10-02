@@ -1,0 +1,149 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_0" id="DAA3C471-A5EB-84D1-08EE-2A128BAA201A" schemaObject="46EDA0A3-B1D4-46E7-96DB-5EAB25FE3991" name="BANK_EMP">
+<sourceConnName>docker-SCOTT</sourceConnName>
+<sourceObjSchema>SCOTT</sourceObjSchema>
+<sourceObjName>BANK_EMP</sourceObjName>
+<createdBy>linakim</createdBy>
+<createdTime>2020-06-07 12:48:53 UTC</createdTime>
+<commentInRDBMS><![CDATA[은행직원]]></commentInRDBMS>
+<ownerDesignName>modeling</ownerDesignName>
+<allowColumnReorder>false</allowColumnReorder>
+<existDependencyGenerateInDDl>true</existDependencyGenerateInDDl>
+<parsed>true</parsed>
+<columns itemClass="oracle.dbtools.crest.model.design.relational.Column">
+<Column name="EMPNO" id="068E7523-6647-7197-1C15-D3F6A70AD630">
+<sourceConnName>docker-SCOTT</sourceConnName>
+<sourceObjSchema>BANK_EMP</sourceObjSchema>
+<sourceObjName>EMPNO</sourceObjName>
+<createdBy>linakim</createdBy>
+<createdTime>2020-06-07 12:48:54 UTC</createdTime>
+<commentInRDBMS><![CDATA[직원번호]]></commentInRDBMS>
+<ownerDesignName>modeling</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>6 BYTE</dataTypeSize>
+<ownDataTypeParameters>6 BYTE,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="BRANCH_NO" id="99A97CC8-E2FF-AA8E-5F92-99B93A0E4EAA">
+<sourceConnName>docker-SCOTT</sourceConnName>
+<sourceObjSchema>BANK_EMP</sourceObjSchema>
+<sourceObjName>BRANCH_NO</sourceObjName>
+<createdBy>linakim</createdBy>
+<createdTime>2020-06-07 12:48:54 UTC</createdTime>
+<commentInRDBMS><![CDATA[지점번호]]></commentInRDBMS>
+<ownerDesignName>modeling</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>3 BYTE</dataTypeSize>
+<ownDataTypeParameters>3 BYTE,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="ENAME" id="5D8681D9-8CF0-06E6-68B1-81215283BB10">
+<sourceConnName>docker-SCOTT</sourceConnName>
+<sourceObjSchema>BANK_EMP</sourceObjSchema>
+<sourceObjName>ENAME</sourceObjName>
+<createdBy>linakim</createdBy>
+<createdTime>2020-06-07 12:48:54 UTC</createdTime>
+<commentInRDBMS><![CDATA[직원이름]]></commentInRDBMS>
+<ownerDesignName>modeling</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>20 BYTE</dataTypeSize>
+<ownDataTypeParameters>20 BYTE,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="DEPTNO" id="2B3AF24F-D8B0-11AC-E3F0-C42401522C04">
+<sourceConnName>docker-SCOTT</sourceConnName>
+<sourceObjSchema>BANK_EMP</sourceObjSchema>
+<sourceObjName>DEPTNO</sourceObjName>
+<createdBy>linakim</createdBy>
+<createdTime>2020-06-07 12:48:54 UTC</createdTime>
+<commentInRDBMS><![CDATA[부서번호]]></commentInRDBMS>
+<ownerDesignName>modeling</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>2 BYTE</dataTypeSize>
+<ownDataTypeParameters>2 BYTE,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="TITLE" id="52CFD536-A745-4F20-45D2-2D55D5FE3649">
+<sourceConnName>docker-SCOTT</sourceConnName>
+<sourceObjSchema>BANK_EMP</sourceObjSchema>
+<sourceObjName>TITLE</sourceObjName>
+<createdBy>linakim</createdBy>
+<createdTime>2020-06-07 12:48:54 UTC</createdTime>
+<commentInRDBMS><![CDATA[직급]]></commentInRDBMS>
+<ownerDesignName>modeling</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>20 BYTE</dataTypeSize>
+<ownDataTypeParameters>20 BYTE,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="EMAIL" id="8796B0A6-E90E-77E6-A72B-50B8445A60F9">
+<sourceConnName>docker-SCOTT</sourceConnName>
+<sourceObjSchema>BANK_EMP</sourceObjSchema>
+<sourceObjName>EMAIL</sourceObjName>
+<createdBy>linakim</createdBy>
+<createdTime>2020-06-07 12:48:54 UTC</createdTime>
+<commentInRDBMS><![CDATA[이메일주소]]></commentInRDBMS>
+<ownerDesignName>modeling</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>30 BYTE</dataTypeSize>
+<ownDataTypeParameters>30 BYTE,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="PHONE" id="A0138416-CE40-44EC-EE37-E4C079FCEB83">
+<sourceConnName>docker-SCOTT</sourceConnName>
+<sourceObjSchema>BANK_EMP</sourceObjSchema>
+<sourceObjName>PHONE</sourceObjName>
+<createdBy>linakim</createdBy>
+<createdTime>2020-06-07 12:48:54 UTC</createdTime>
+<commentInRDBMS><![CDATA[연락처]]></commentInRDBMS>
+<ownerDesignName>modeling</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>13 BYTE</dataTypeSize>
+<ownDataTypeParameters>13 BYTE,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+</columns>
+<indexes itemClass="oracle.dbtools.crest.model.design.relational.Index">
+<ind_PK_UK id="471EECAA-C23C-6BB8-B3CB-F34314B638C4" name="PK_BANK_EMP">
+<sourceConnName>docker-SCOTT</sourceConnName>
+<sourceObjSchema>SCOTT</sourceObjSchema>
+<sourceObjName>PK_BANK_EMP</sourceObjName>
+<createdBy>linakim</createdBy>
+<createdTime>2020-06-07 12:48:56 UTC</createdTime>
+<ownerDesignName>modeling</ownerDesignName>
+<pk>true</pk>
+<indexState>Primary Constraint</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="068E7523-6647-7197-1C15-D3F6A70AD630"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="441DBD78-57B2-9F26-38AA-15B1FAEACD22" schemaObject="46EDA0A3-B1D4-46E7-96DB-5EAB25FE3991" name="PK_BANK_EMP">
+<sourceConnName>docker-SCOTT</sourceConnName>
+<sourceObjSchema>SCOTT</sourceObjSchema>
+<sourceObjName>PK_BANK_EMP</sourceObjName>
+<createdBy>linakim</createdBy>
+<createdTime>2020-06-07 12:48:55 UTC</createdTime>
+<ownerDesignName>modeling</ownerDesignName>
+<indexState>Unique Plain Index</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="068E7523-6647-7197-1C15-D3F6A70AD630"/>
+</indexColumnUsage>
+</ind_PK_UK>
+</indexes>
+</Table>

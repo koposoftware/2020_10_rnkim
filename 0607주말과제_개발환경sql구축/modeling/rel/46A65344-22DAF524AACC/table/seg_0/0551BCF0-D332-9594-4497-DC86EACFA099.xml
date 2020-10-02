@@ -1,0 +1,149 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_0" id="0551BCF0-D332-9594-4497-DC86EACFA099" schemaObject="46EDA0A3-B1D4-46E7-96DB-5EAB25FE3991" name="LOAN_DOC">
+<sourceConnName>docker-SCOTT</sourceConnName>
+<sourceObjSchema>SCOTT</sourceObjSchema>
+<sourceObjName>LOAN_DOC</sourceObjName>
+<createdBy>linakim</createdBy>
+<createdTime>2020-06-07 12:48:53 UTC</createdTime>
+<commentInRDBMS><![CDATA[신청서류]]></commentInRDBMS>
+<ownerDesignName>modeling</ownerDesignName>
+<allowColumnReorder>false</allowColumnReorder>
+<existDependencyGenerateInDDl>true</existDependencyGenerateInDDl>
+<parsed>true</parsed>
+<columns itemClass="oracle.dbtools.crest.model.design.relational.Column">
+<Column name="APP_NO" id="9544355D-00AC-F3B0-42A2-0AC4782F03E9">
+<sourceConnName>docker-SCOTT</sourceConnName>
+<sourceObjSchema>LOAN_DOC</sourceObjSchema>
+<sourceObjName>APP_NO</sourceObjName>
+<createdBy>linakim</createdBy>
+<createdTime>2020-06-07 12:48:54 UTC</createdTime>
+<commentInRDBMS><![CDATA[신청번호]]></commentInRDBMS>
+<ownerDesignName>modeling</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>6 BYTE</dataTypeSize>
+<ownDataTypeParameters>6 BYTE,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="E1EC14EB-ED47-0C15-EBFC-465AE471B5D5" referredColumn="ABB1C0DC-77DF-6392-B2BD-242BA7F8DAF9"/>
+</associations>
+</Column>
+<Column name="DOC_TYPE" id="BA360529-9467-5516-C063-5F7B516CC4D7">
+<sourceConnName>docker-SCOTT</sourceConnName>
+<sourceObjSchema>LOAN_DOC</sourceObjSchema>
+<sourceObjName>DOC_TYPE</sourceObjName>
+<createdBy>linakim</createdBy>
+<createdTime>2020-06-07 12:48:54 UTC</createdTime>
+<commentInRDBMS><![CDATA[서류종류]]></commentInRDBMS>
+<ownerDesignName>modeling</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>40 BYTE</dataTypeSize>
+<ownDataTypeParameters>40 BYTE,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="BY_WHOM" id="4E9AF7B6-CB46-E676-E304-E039138CBEA2">
+<sourceConnName>docker-SCOTT</sourceConnName>
+<sourceObjSchema>LOAN_DOC</sourceObjSchema>
+<sourceObjName>BY_WHOM</sourceObjName>
+<createdBy>linakim</createdBy>
+<createdTime>2020-06-07 12:48:54 UTC</createdTime>
+<commentInRDBMS><![CDATA[제출인]]></commentInRDBMS>
+<ownerDesignName>modeling</ownerDesignName>
+<constraintName>CHK_LOAN_DOC</constraintName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>20 BYTE</dataTypeSize>
+<checkConstraint>
+<implementationDef dbType="Generic Constraint" definition="
+			by_whom
+			IN (
+				&apos;세무사&apos;, &apos;기업&apos;
+			)
+		"/>
+<implementationDef dbType="Oracle Database 12c" definition="
+			by_whom
+			IN (
+				&apos;세무사&apos;, &apos;기업&apos;
+			)
+		"/>
+</checkConstraint>
+<ownDataTypeParameters>20 BYTE,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="UPLOAD_DATE" id="260FF63E-3983-DA7D-9D03-BA4196CCD76E">
+<sourceConnName>docker-SCOTT</sourceConnName>
+<sourceObjSchema>LOAN_DOC</sourceObjSchema>
+<sourceObjName>UPLOAD_DATE</sourceObjName>
+<createdBy>linakim</createdBy>
+<createdTime>2020-06-07 12:48:54 UTC</createdTime>
+<commentInRDBMS><![CDATA[제출일]]></commentInRDBMS>
+<ownerDesignName>modeling</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT007</logicalDatatype>
+<dataTypeSize>7</dataTypeSize>
+<ownDataTypeParameters>7,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="FILE_NAME" id="5A31DBDE-BDF1-957E-CEE9-F14D8DA312C3">
+<sourceConnName>docker-SCOTT</sourceConnName>
+<sourceObjSchema>LOAN_DOC</sourceObjSchema>
+<sourceObjName>FILE_NAME</sourceObjName>
+<createdBy>linakim</createdBy>
+<createdTime>2020-06-07 12:48:54 UTC</createdTime>
+<commentInRDBMS><![CDATA[서류이름]]></commentInRDBMS>
+<ownerDesignName>modeling</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>30 BYTE</dataTypeSize>
+<ownDataTypeParameters>30 BYTE,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+</columns>
+<indexes itemClass="oracle.dbtools.crest.model.design.relational.Index">
+<ind_PK_UK id="2C87151E-10E0-5FC6-6EB2-81EC5E498F6D" name="PK_LOAN_DOC">
+<sourceConnName>docker-SCOTT</sourceConnName>
+<sourceObjSchema>SCOTT</sourceObjSchema>
+<sourceObjName>PK_LOAN_DOC</sourceObjName>
+<createdBy>linakim</createdBy>
+<createdTime>2020-06-07 12:48:57 UTC</createdTime>
+<ownerDesignName>modeling</ownerDesignName>
+<pk>true</pk>
+<indexState>Primary Constraint</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="9544355D-00AC-F3B0-42A2-0AC4782F03E9"/>
+<colUsage columnID="BA360529-9467-5516-C063-5F7B516CC4D7"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="9C9DB1EB-F8D9-9958-724B-0869788637B0" schemaObject="46EDA0A3-B1D4-46E7-96DB-5EAB25FE3991" name="PK_LOAN_DOC">
+<sourceConnName>docker-SCOTT</sourceConnName>
+<sourceObjSchema>SCOTT</sourceObjSchema>
+<sourceObjName>PK_LOAN_DOC</sourceObjName>
+<createdBy>linakim</createdBy>
+<createdTime>2020-06-07 12:48:56 UTC</createdTime>
+<ownerDesignName>modeling</ownerDesignName>
+<indexState>Unique Plain Index</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="9544355D-00AC-F3B0-42A2-0AC4782F03E9"/>
+<colUsage columnID="BA360529-9467-5516-C063-5F7B516CC4D7"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="42123F27-D465-77C8-08FE-7DDADF10B78C" name="FK_LOAN_WAITING_TO_LOAN_DOC">
+<createdBy>linakim</createdBy>
+<createdTime>2020-06-07 12:48:57 UTC</createdTime>
+<ownerDesignName>modeling</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="9544355D-00AC-F3B0-42A2-0AC4782F03E9"/>
+</indexColumnUsage>
+</ind_PK_UK>
+</indexes>
+</Table>

@@ -1,0 +1,242 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_0" id="B77BEB26-A133-ED69-3532-6E8FE9FE7C79" schemaObject="46EDA0A3-B1D4-46E7-96DB-5EAB25FE3991" name="LOAN_WAITING">
+<sourceConnName>docker-SCOTT</sourceConnName>
+<sourceObjSchema>SCOTT</sourceObjSchema>
+<sourceObjName>LOAN_WAITING</sourceObjName>
+<createdBy>linakim</createdBy>
+<createdTime>2020-06-07 12:48:53 UTC</createdTime>
+<commentInRDBMS><![CDATA[대출승인대기]]></commentInRDBMS>
+<ownerDesignName>modeling</ownerDesignName>
+<allowColumnReorder>false</allowColumnReorder>
+<existDependencyGenerateInDDl>true</existDependencyGenerateInDDl>
+<parsed>true</parsed>
+<columns itemClass="oracle.dbtools.crest.model.design.relational.Column">
+<Column name="APP_NO" id="ABB1C0DC-77DF-6392-B2BD-242BA7F8DAF9">
+<sourceConnName>docker-SCOTT</sourceConnName>
+<sourceObjSchema>LOAN_WAITING</sourceObjSchema>
+<sourceObjName>APP_NO</sourceObjName>
+<createdBy>linakim</createdBy>
+<createdTime>2020-06-07 12:48:54 UTC</createdTime>
+<commentInRDBMS><![CDATA[신청번호]]></commentInRDBMS>
+<ownerDesignName>modeling</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>6 BYTE</dataTypeSize>
+<ownDataTypeParameters>6 BYTE,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="APPROVE" id="640C0B49-C1C4-A429-F84C-7EBCBEB9EDAB">
+<sourceConnName>docker-SCOTT</sourceConnName>
+<sourceObjSchema>LOAN_WAITING</sourceObjSchema>
+<sourceObjName>APPROVE</sourceObjName>
+<createdBy>linakim</createdBy>
+<createdTime>2020-06-07 12:48:54 UTC</createdTime>
+<commentInRDBMS><![CDATA[승인여부]]></commentInRDBMS>
+<ownerDesignName>modeling</ownerDesignName>
+<constraintName>CHK_APPROVE</constraintName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>10 BYTE</dataTypeSize>
+<checkConstraint>
+<implementationDef dbType="Generic Constraint" definition="
+			approve
+			IN (&apos;Y&apos;, &apos;N&apos;)
+		"/>
+<implementationDef dbType="Oracle Database 12c" definition="
+			approve
+			IN (&apos;Y&apos;, &apos;N&apos;)
+		"/>
+</checkConstraint>
+<defaultValue>&apos;진행중&apos;</defaultValue>
+<ownDataTypeParameters>10 BYTE,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="APP_DATE" id="FBEE998D-128D-ECC6-B7E5-59FA4843ACBB">
+<sourceConnName>docker-SCOTT</sourceConnName>
+<sourceObjSchema>LOAN_WAITING</sourceObjSchema>
+<sourceObjName>APP_DATE</sourceObjName>
+<createdBy>linakim</createdBy>
+<createdTime>2020-06-07 12:48:54 UTC</createdTime>
+<commentInRDBMS><![CDATA[신청일]]></commentInRDBMS>
+<ownerDesignName>modeling</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT007</logicalDatatype>
+<dataTypeSize>7</dataTypeSize>
+<ownDataTypeParameters>7,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="APP_AMOUNT" id="E8BC914B-0A6B-9FB5-F376-38304FE72CE1">
+<sourceConnName>docker-SCOTT</sourceConnName>
+<sourceObjSchema>LOAN_WAITING</sourceObjSchema>
+<sourceObjName>APP_AMOUNT</sourceObjName>
+<createdBy>linakim</createdBy>
+<createdTime>2020-06-07 12:48:54 UTC</createdTime>
+<commentInRDBMS><![CDATA[신청금액]]></commentInRDBMS>
+<ownerDesignName>modeling</ownerDesignName>
+<constraintName>CHK_APP_AMOUNT</constraintName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<checkConstraint>
+<implementationDef dbType="Generic Constraint" definition="
+			app_amount &gt; 0
+		"/>
+<implementationDef dbType="Oracle Database 12c" definition="
+			app_amount &gt; 0
+		"/>
+</checkConstraint>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="APP_MON" id="86F94260-25B5-5BF5-B000-9E42F1EAC99A">
+<sourceConnName>docker-SCOTT</sourceConnName>
+<sourceObjSchema>LOAN_WAITING</sourceObjSchema>
+<sourceObjName>APP_MON</sourceObjName>
+<createdBy>linakim</createdBy>
+<createdTime>2020-06-07 12:48:54 UTC</createdTime>
+<commentInRDBMS><![CDATA[신청개월수]]></commentInRDBMS>
+<ownerDesignName>modeling</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="CORP_ID" id="D9F485DD-DCE3-FE43-CD67-552CB4393164">
+<sourceConnName>docker-SCOTT</sourceConnName>
+<sourceObjSchema>LOAN_WAITING</sourceObjSchema>
+<sourceObjName>CORP_ID</sourceObjName>
+<createdBy>linakim</createdBy>
+<createdTime>2020-06-07 12:48:54 UTC</createdTime>
+<commentInRDBMS><![CDATA[기업아이디]]></commentInRDBMS>
+<ownerDesignName>modeling</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>12 BYTE</dataTypeSize>
+<ownDataTypeParameters>12 BYTE,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="0B555C5C-A0A8-9046-96D1-F74E3D70598D" referredColumn="B9384936-7D06-E1BF-EFDC-E30B37C3B3B7"/>
+</associations>
+</Column>
+<Column name="PROD_NO" id="F303CFA4-2899-62E1-C4B7-4C7FC10AAC94">
+<sourceConnName>docker-SCOTT</sourceConnName>
+<sourceObjSchema>LOAN_WAITING</sourceObjSchema>
+<sourceObjName>PROD_NO</sourceObjName>
+<createdBy>linakim</createdBy>
+<createdTime>2020-06-07 12:48:54 UTC</createdTime>
+<commentInRDBMS><![CDATA[대출상품번호]]></commentInRDBMS>
+<ownerDesignName>modeling</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>3 BYTE</dataTypeSize>
+<ownDataTypeParameters>3 BYTE,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="73BA91C9-9D50-313F-6D0F-02F584909741" referredColumn="46E1AD58-97D8-5EFB-DEFA-642ABB37D9C3"/>
+</associations>
+</Column>
+<Column name="EMPNO" id="FF3FE050-64FA-5E5F-CF19-4B6B3E056C5B">
+<sourceConnName>docker-SCOTT</sourceConnName>
+<sourceObjSchema>LOAN_WAITING</sourceObjSchema>
+<sourceObjName>EMPNO</sourceObjName>
+<createdBy>linakim</createdBy>
+<createdTime>2020-06-07 12:48:54 UTC</createdTime>
+<commentInRDBMS><![CDATA[직원번호]]></commentInRDBMS>
+<ownerDesignName>modeling</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>6 BYTE</dataTypeSize>
+<ownDataTypeParameters>6 BYTE,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="0A1C2482-7939-3646-19D8-4E8EC244C5C7" referredColumn="068E7523-6647-7197-1C15-D3F6A70AD630"/>
+</associations>
+</Column>
+<Column name="LOAN_TYPE" id="26853688-15DD-296C-2D95-0FC4EEEE3AF6">
+<sourceConnName>docker-SCOTT</sourceConnName>
+<sourceObjSchema>LOAN_WAITING</sourceObjSchema>
+<sourceObjName>LOAN_TYPE</sourceObjName>
+<createdBy>linakim</createdBy>
+<createdTime>2020-06-07 12:48:54 UTC</createdTime>
+<commentInRDBMS><![CDATA[대출구분]]></commentInRDBMS>
+<ownerDesignName>modeling</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>20 BYTE</dataTypeSize>
+<ownDataTypeParameters>20 BYTE,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="73BA91C9-9D50-313F-6D0F-02F584909741" referredColumn="CD3AAA43-C447-4A5D-2694-36BC4A691DF8"/>
+</associations>
+</Column>
+</columns>
+<indexes itemClass="oracle.dbtools.crest.model.design.relational.Index">
+<ind_PK_UK id="D63793FD-45E9-CE39-0CAF-6986AA527229" name="PK_LOAN_WAITING">
+<sourceConnName>docker-SCOTT</sourceConnName>
+<sourceObjSchema>SCOTT</sourceObjSchema>
+<sourceObjName>PK_LOAN_WAITING</sourceObjName>
+<createdBy>linakim</createdBy>
+<createdTime>2020-06-07 12:48:57 UTC</createdTime>
+<ownerDesignName>modeling</ownerDesignName>
+<pk>true</pk>
+<indexState>Primary Constraint</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="ABB1C0DC-77DF-6392-B2BD-242BA7F8DAF9"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="DA608391-3C17-E46D-52EF-C8D0D6CBE36B" schemaObject="46EDA0A3-B1D4-46E7-96DB-5EAB25FE3991" name="PK_LOAN_WAITING">
+<sourceConnName>docker-SCOTT</sourceConnName>
+<sourceObjSchema>SCOTT</sourceObjSchema>
+<sourceObjName>PK_LOAN_WAITING</sourceObjName>
+<createdBy>linakim</createdBy>
+<createdTime>2020-06-07 12:48:56 UTC</createdTime>
+<ownerDesignName>modeling</ownerDesignName>
+<indexState>Unique Plain Index</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="ABB1C0DC-77DF-6392-B2BD-242BA7F8DAF9"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="BCFE5F2D-9B45-DD24-8670-06408725F794" name="FK_BANK_EMP_TO_LOAN_WAITING">
+<createdBy>linakim</createdBy>
+<createdTime>2020-06-07 12:48:57 UTC</createdTime>
+<ownerDesignName>modeling</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="FF3FE050-64FA-5E5F-CF19-4B6B3E056C5B"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="1064BA7D-9B4A-F888-5F59-D117FB63AF68" name="FK_CORP_TO_LOAN_WAITING">
+<createdBy>linakim</createdBy>
+<createdTime>2020-06-07 12:48:57 UTC</createdTime>
+<ownerDesignName>modeling</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="D9F485DD-DCE3-FE43-CD67-552CB4393164"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="8DCE5475-E19F-780E-8B72-9311E4FD3F0F" name="FK_LOAN_PROD_TO_LOAN_WAITING">
+<createdBy>linakim</createdBy>
+<createdTime>2020-06-07 12:48:57 UTC</createdTime>
+<ownerDesignName>modeling</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="F303CFA4-2899-62E1-C4B7-4C7FC10AAC94"/>
+<colUsage columnID="26853688-15DD-296C-2D95-0FC4EEEE3AF6"/>
+</indexColumnUsage>
+</ind_PK_UK>
+</indexes>
+</Table>

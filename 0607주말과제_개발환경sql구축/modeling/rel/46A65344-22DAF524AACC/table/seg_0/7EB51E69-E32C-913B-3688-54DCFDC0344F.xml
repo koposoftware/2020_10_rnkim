@@ -1,0 +1,127 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_0" id="7EB51E69-E32C-913B-3688-54DCFDC0344F" schemaObject="46EDA0A3-B1D4-46E7-96DB-5EAB25FE3991" name="RPY_HISTORY">
+<sourceConnName>docker-SCOTT</sourceConnName>
+<sourceObjSchema>SCOTT</sourceObjSchema>
+<sourceObjName>RPY_HISTORY</sourceObjName>
+<createdBy>linakim</createdBy>
+<createdTime>2020-06-07 12:48:53 UTC</createdTime>
+<commentInRDBMS><![CDATA[상환이력]]></commentInRDBMS>
+<ownerDesignName>modeling</ownerDesignName>
+<allowColumnReorder>false</allowColumnReorder>
+<existDependencyGenerateInDDl>true</existDependencyGenerateInDDl>
+<parsed>true</parsed>
+<columns itemClass="oracle.dbtools.crest.model.design.relational.Column">
+<Column name="MID_RPY" id="C7AC80FC-B821-8E6F-4EFC-75C147BDB623">
+<sourceConnName>docker-SCOTT</sourceConnName>
+<sourceObjSchema>RPY_HISTORY</sourceObjSchema>
+<sourceObjName>MID_RPY</sourceObjName>
+<createdBy>linakim</createdBy>
+<createdTime>2020-06-07 12:48:54 UTC</createdTime>
+<commentInRDBMS><![CDATA[중도상환일]]></commentInRDBMS>
+<ownerDesignName>modeling</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT007</logicalDatatype>
+<dataTypeSize>7</dataTypeSize>
+<ownDataTypeParameters>7,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="LOAN_NO" id="BA6151F4-4CDB-F934-F1A5-A218323C55F5">
+<sourceConnName>docker-SCOTT</sourceConnName>
+<sourceObjSchema>RPY_HISTORY</sourceObjSchema>
+<sourceObjName>LOAN_NO</sourceObjName>
+<createdBy>linakim</createdBy>
+<createdTime>2020-06-07 12:48:54 UTC</createdTime>
+<commentInRDBMS><![CDATA[대출번호]]></commentInRDBMS>
+<ownerDesignName>modeling</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>6 BYTE</dataTypeSize>
+<ownDataTypeParameters>6 BYTE,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="759EA0C6-BFBB-5C23-F150-4F6204DE0196" referredColumn="B4560217-B387-1BAC-A7E9-1C9BC459271D"/>
+</associations>
+</Column>
+<Column name="MID_RPY_AMT" id="006E1C8D-37F8-AA9E-1A96-720539F09BC0">
+<sourceConnName>docker-SCOTT</sourceConnName>
+<sourceObjSchema>RPY_HISTORY</sourceObjSchema>
+<sourceObjName>MID_RPY_AMT</sourceObjName>
+<createdBy>linakim</createdBy>
+<createdTime>2020-06-07 12:48:54 UTC</createdTime>
+<commentInRDBMS><![CDATA[중도상환금액]]></commentInRDBMS>
+<ownerDesignName>modeling</ownerDesignName>
+<constraintName>CHK_MID_RPY_AMT</constraintName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<checkConstraint>
+<implementationDef dbType="Generic Constraint" definition="
+			mid_rpy_amt &gt; 0
+		"/>
+<implementationDef dbType="Oracle Database 12c" definition="
+			mid_rpy_amt &gt; 0
+		"/>
+</checkConstraint>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="MID_RPY_FEE" id="9BED5A59-7B62-A481-38A2-490B8182572D">
+<sourceConnName>docker-SCOTT</sourceConnName>
+<sourceObjSchema>RPY_HISTORY</sourceObjSchema>
+<sourceObjName>MID_RPY_FEE</sourceObjName>
+<createdBy>linakim</createdBy>
+<createdTime>2020-06-07 12:48:54 UTC</createdTime>
+<commentInRDBMS><![CDATA[중도상환수수료]]></commentInRDBMS>
+<ownerDesignName>modeling</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+</columns>
+<indexes itemClass="oracle.dbtools.crest.model.design.relational.Index">
+<ind_PK_UK id="6B2709AE-1BA2-A76A-ED4E-CFA53584F574" name="PK_RPY_HISTORY">
+<sourceConnName>docker-SCOTT</sourceConnName>
+<sourceObjSchema>SCOTT</sourceObjSchema>
+<sourceObjName>PK_RPY_HISTORY</sourceObjName>
+<createdBy>linakim</createdBy>
+<createdTime>2020-06-07 12:48:57 UTC</createdTime>
+<ownerDesignName>modeling</ownerDesignName>
+<pk>true</pk>
+<indexState>Primary Constraint</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="C7AC80FC-B821-8E6F-4EFC-75C147BDB623"/>
+<colUsage columnID="BA6151F4-4CDB-F934-F1A5-A218323C55F5"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="C048E6E9-B4A2-4C62-000B-70B8B8C5D7EC" schemaObject="46EDA0A3-B1D4-46E7-96DB-5EAB25FE3991" name="PK_RPY_HISTORY">
+<sourceConnName>docker-SCOTT</sourceConnName>
+<sourceObjSchema>SCOTT</sourceObjSchema>
+<sourceObjName>PK_RPY_HISTORY</sourceObjName>
+<createdBy>linakim</createdBy>
+<createdTime>2020-06-07 12:48:56 UTC</createdTime>
+<ownerDesignName>modeling</ownerDesignName>
+<indexState>Unique Plain Index</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="C7AC80FC-B821-8E6F-4EFC-75C147BDB623"/>
+<colUsage columnID="BA6151F4-4CDB-F934-F1A5-A218323C55F5"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="A4008757-2A0A-F78F-2648-7DF309739115" name="FK_LOAN_HIS_TO_RPY_HIS">
+<createdBy>linakim</createdBy>
+<createdTime>2020-06-07 12:48:57 UTC</createdTime>
+<ownerDesignName>modeling</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="BA6151F4-4CDB-F934-F1A5-A218323C55F5"/>
+</indexColumnUsage>
+</ind_PK_UK>
+</indexes>
+</Table>

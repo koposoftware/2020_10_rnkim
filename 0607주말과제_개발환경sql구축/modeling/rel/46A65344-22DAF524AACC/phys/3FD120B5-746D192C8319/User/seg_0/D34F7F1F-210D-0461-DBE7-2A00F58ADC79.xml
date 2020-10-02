@@ -1,0 +1,9 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<UserOraclev10g class="oracle.dbtools.crest.model.design.storage.oracle.v10g.UserOraclev10g" name="SCOTT" directorySegmentName="seg_0" id="D34F7F1F-210D-0461-DBE7-2A00F58ADC79">
+<sourceConnName>docker-SCOTT</sourceConnName>
+<sourceObjName>SCOTT</sourceObjName>
+<createdBy>linakim</createdBy>
+<createdTime>2020-06-07 12:48:53 UTC</createdTime>
+<ownerDesignName>modeling</ownerDesignName>
+<schemaObject>46EDA0A3-B1D4-46E7-96DB-5EAB25FE3991</schemaObject>
+</UserOraclev10g>

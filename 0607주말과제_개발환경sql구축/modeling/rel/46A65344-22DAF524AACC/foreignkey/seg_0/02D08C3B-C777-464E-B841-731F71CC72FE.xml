@@ -1,0 +1,19 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<FKIndexAssociation class="oracle.dbtools.crest.model.design.relational.FKIndexAssociation" directorySegmentName="seg_0" id="02D08C3B-C777-464E-B841-731F71CC72FE" containerWithKeyObject="183CF5B9-B49C-07D5-BB37-20DAD232AA8A" localFKIndex="E3DDF0B8-21AC-FCA5-8C71-972B3F230512" name="FK_FNC_STMT_TO_FS_STATUS">
+<sourceConnName>docker-SCOTT</sourceConnName>
+<sourceObjSchema>SCOTT</sourceObjSchema>
+<sourceObjName>FK_FNC_STMT_TO_FS_STATUS</sourceObjName>
+<createdBy>linakim</createdBy>
+<createdTime>2020-06-07 12:48:57 UTC</createdTime>
+<ownerDesignName>modeling</ownerDesignName>
+<referredTableLongName>SCOTT.FNC_STMT</referredTableLongName>
+<deleteRule>NO ACTION</deleteRule>
+<referredTableID>C0BF044C-D033-7B65-65A1-811F32A4F1D7</referredTableID>
+<keyObject>BD29BE0A-6505-17FC-5463-F6F8B070C0AC</keyObject>
+<referredKeyID>BD29BE0A-6505-17FC-5463-F6F8B070C0AC</referredKeyID>
+<mandatory>true</mandatory>
+<refColNames>CORP_ID,TURN</refColNames>
+<transferable>true</transferable>
+<rely>false</rely>
+<columnDependencyConstraintGenerateInDDL>true</columnDependencyConstraintGenerateInDDL>
+</FKIndexAssociation>

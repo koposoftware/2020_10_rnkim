@@ -1,0 +1,19 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<FKIndexAssociation class="oracle.dbtools.crest.model.design.relational.FKIndexAssociation" directorySegmentName="seg_0" id="CA0F8D25-76F1-4901-3419-EB4488769466" containerWithKeyObject="A94C45F1-6C9E-57B0-2FCF-3C76EC5F9108" localFKIndex="AE08F3CA-4C5E-85EC-AD17-B71D7F1A176C" name="FK_BANK_EMP_TO_LOAN_HISTORY">
+<sourceConnName>docker-SCOTT</sourceConnName>
+<sourceObjSchema>SCOTT</sourceObjSchema>
+<sourceObjName>FK_BANK_EMP_TO_LOAN_HISTORY</sourceObjName>
+<createdBy>linakim</createdBy>
+<createdTime>2020-06-07 12:48:57 UTC</createdTime>
+<ownerDesignName>modeling</ownerDesignName>
+<referredTableLongName>SCOTT.BANK_EMP</referredTableLongName>
+<deleteRule>NO ACTION</deleteRule>
+<referredTableID>DAA3C471-A5EB-84D1-08EE-2A128BAA201A</referredTableID>
+<keyObject>471EECAA-C23C-6BB8-B3CB-F34314B638C4</keyObject>
+<referredKeyID>471EECAA-C23C-6BB8-B3CB-F34314B638C4</referredKeyID>
+<mandatory>true</mandatory>
+<refColNames>EMPNO</refColNames>
+<transferable>true</transferable>
+<rely>false</rely>
+<columnDependencyConstraintGenerateInDDL>true</columnDependencyConstraintGenerateInDDL>
+</FKIndexAssociation>

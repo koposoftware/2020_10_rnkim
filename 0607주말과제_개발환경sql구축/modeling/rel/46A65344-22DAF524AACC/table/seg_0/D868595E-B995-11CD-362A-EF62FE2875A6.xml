@@ -1,0 +1,134 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_0" id="D868595E-B995-11CD-362A-EF62FE2875A6" schemaObject="46EDA0A3-B1D4-46E7-96DB-5EAB25FE3991" name="CASH_FLOW">
+<sourceConnName>docker-SCOTT</sourceConnName>
+<sourceObjSchema>SCOTT</sourceObjSchema>
+<sourceObjName>CASH_FLOW</sourceObjName>
+<createdBy>linakim</createdBy>
+<createdTime>2020-06-07 12:48:53 UTC</createdTime>
+<commentInRDBMS><![CDATA[현금흐름표]]></commentInRDBMS>
+<ownerDesignName>modeling</ownerDesignName>
+<allowColumnReorder>false</allowColumnReorder>
+<existDependencyGenerateInDDl>true</existDependencyGenerateInDDl>
+<parsed>true</parsed>
+<columns itemClass="oracle.dbtools.crest.model.design.relational.Column">
+<Column name="CORP_ID" id="59CD3C2D-7D87-58D2-4F38-D5B1A8294099">
+<sourceConnName>docker-SCOTT</sourceConnName>
+<sourceObjSchema>CASH_FLOW</sourceObjSchema>
+<sourceObjName>CORP_ID</sourceObjName>
+<createdBy>linakim</createdBy>
+<createdTime>2020-06-07 12:48:54 UTC</createdTime>
+<commentInRDBMS><![CDATA[기업아이디]]></commentInRDBMS>
+<ownerDesignName>modeling</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>12 BYTE</dataTypeSize>
+<ownDataTypeParameters>12 BYTE,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="141E04D8-5C8C-CD57-F459-07F4A608941E" referredColumn="083213B9-B6EA-95D8-A451-5DFAC4DA9980"/>
+</associations>
+</Column>
+<Column name="TURN" id="0F6FE3FE-2F36-FE5D-BBB4-C03BDBBB3559">
+<sourceConnName>docker-SCOTT</sourceConnName>
+<sourceObjSchema>CASH_FLOW</sourceObjSchema>
+<sourceObjName>TURN</sourceObjName>
+<createdBy>linakim</createdBy>
+<createdTime>2020-06-07 12:48:54 UTC</createdTime>
+<commentInRDBMS><![CDATA[회차]]></commentInRDBMS>
+<ownerDesignName>modeling</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="141E04D8-5C8C-CD57-F459-07F4A608941E" referredColumn="3231BE67-6BF2-8469-5775-FD5725DDE9F9"/>
+</associations>
+</Column>
+<Column name="SALES_CF" id="C751D913-79C5-CF28-36C4-767D889EB09E">
+<sourceConnName>docker-SCOTT</sourceConnName>
+<sourceObjSchema>CASH_FLOW</sourceObjSchema>
+<sourceObjName>SALES_CF</sourceObjName>
+<createdBy>linakim</createdBy>
+<createdTime>2020-06-07 12:48:54 UTC</createdTime>
+<commentInRDBMS><![CDATA[영업활동현금흐름]]></commentInRDBMS>
+<ownerDesignName>modeling</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="FIN_CF" id="E283F881-71F4-3A88-5E4E-A8A6327FC9B9">
+<sourceConnName>docker-SCOTT</sourceConnName>
+<sourceObjSchema>CASH_FLOW</sourceObjSchema>
+<sourceObjName>FIN_CF</sourceObjName>
+<createdBy>linakim</createdBy>
+<createdTime>2020-06-07 12:48:54 UTC</createdTime>
+<commentInRDBMS><![CDATA[투자활동현금흐름]]></commentInRDBMS>
+<ownerDesignName>modeling</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="INVST_CF" id="B0CCE27F-74D2-7828-4790-E87C28C213BF">
+<sourceConnName>docker-SCOTT</sourceConnName>
+<sourceObjSchema>CASH_FLOW</sourceObjSchema>
+<sourceObjName>INVST_CF</sourceObjName>
+<createdBy>linakim</createdBy>
+<createdTime>2020-06-07 12:48:54 UTC</createdTime>
+<commentInRDBMS><![CDATA[재무활동현금흐름]]></commentInRDBMS>
+<ownerDesignName>modeling</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+</columns>
+<indexes itemClass="oracle.dbtools.crest.model.design.relational.Index">
+<ind_PK_UK id="55717666-EA23-3367-C26F-1D9657B3F7C5" name="PK_CASH_FLOW">
+<sourceConnName>docker-SCOTT</sourceConnName>
+<sourceObjSchema>SCOTT</sourceObjSchema>
+<sourceObjName>PK_CASH_FLOW</sourceObjName>
+<createdBy>linakim</createdBy>
+<createdTime>2020-06-07 12:48:57 UTC</createdTime>
+<ownerDesignName>modeling</ownerDesignName>
+<pk>true</pk>
+<indexState>Primary Constraint</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="59CD3C2D-7D87-58D2-4F38-D5B1A8294099"/>
+<colUsage columnID="0F6FE3FE-2F36-FE5D-BBB4-C03BDBBB3559"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="FADA2A19-D8A1-EBCE-F57A-E72AD5625ADC" schemaObject="46EDA0A3-B1D4-46E7-96DB-5EAB25FE3991" name="PK_CASH_FLOW">
+<sourceConnName>docker-SCOTT</sourceConnName>
+<sourceObjSchema>SCOTT</sourceObjSchema>
+<sourceObjName>PK_CASH_FLOW</sourceObjName>
+<createdBy>linakim</createdBy>
+<createdTime>2020-06-07 12:48:55 UTC</createdTime>
+<ownerDesignName>modeling</ownerDesignName>
+<indexState>Unique Plain Index</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="59CD3C2D-7D87-58D2-4F38-D5B1A8294099"/>
+<colUsage columnID="0F6FE3FE-2F36-FE5D-BBB4-C03BDBBB3559"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="F92A117D-91A4-9B67-2534-210040E00DF0" name="FK_FNC_STMT_TO_CASH_FLOW">
+<createdBy>linakim</createdBy>
+<createdTime>2020-06-07 12:48:57 UTC</createdTime>
+<ownerDesignName>modeling</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="59CD3C2D-7D87-58D2-4F38-D5B1A8294099"/>
+<colUsage columnID="0F6FE3FE-2F36-FE5D-BBB4-C03BDBBB3559"/>
+</indexColumnUsage>
+</ind_PK_UK>
+</indexes>
+</Table>

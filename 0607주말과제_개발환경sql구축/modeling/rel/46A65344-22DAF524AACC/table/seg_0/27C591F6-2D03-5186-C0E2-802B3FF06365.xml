@@ -1,0 +1,145 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_0" id="27C591F6-2D03-5186-C0E2-802B3FF06365" schemaObject="46EDA0A3-B1D4-46E7-96DB-5EAB25FE3991" name="ACCOUNTANT">
+<sourceConnName>docker-SCOTT</sourceConnName>
+<sourceObjSchema>SCOTT</sourceObjSchema>
+<sourceObjName>ACCOUNTANT</sourceObjName>
+<createdBy>linakim</createdBy>
+<createdTime>2020-06-07 12:48:53 UTC</createdTime>
+<commentInRDBMS><![CDATA[세무사]]></commentInRDBMS>
+<ownerDesignName>modeling</ownerDesignName>
+<allowColumnReorder>false</allowColumnReorder>
+<existDependencyGenerateInDDl>true</existDependencyGenerateInDDl>
+<parsed>true</parsed>
+<columns itemClass="oracle.dbtools.crest.model.design.relational.Column">
+<Column name="ACC_NO" id="B488DC66-84A2-3DDB-F5CA-E0862DBDFC78">
+<sourceConnName>docker-SCOTT</sourceConnName>
+<sourceObjSchema>ACCOUNTANT</sourceObjSchema>
+<sourceObjName>ACC_NO</sourceObjName>
+<createdBy>linakim</createdBy>
+<createdTime>2020-06-07 12:48:54 UTC</createdTime>
+<commentInRDBMS><![CDATA[세무사등록번호]]></commentInRDBMS>
+<ownerDesignName>modeling</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>7 BYTE</dataTypeSize>
+<ownDataTypeParameters>7 BYTE,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="NAME" id="DDE5067F-E5B2-7457-E31D-AD849368DF3F">
+<sourceConnName>docker-SCOTT</sourceConnName>
+<sourceObjSchema>ACCOUNTANT</sourceObjSchema>
+<sourceObjName>NAME</sourceObjName>
+<createdBy>linakim</createdBy>
+<createdTime>2020-06-07 12:48:54 UTC</createdTime>
+<commentInRDBMS><![CDATA[세무사이름]]></commentInRDBMS>
+<ownerDesignName>modeling</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>30 BYTE</dataTypeSize>
+<ownDataTypeParameters>30 BYTE,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="ID" id="C34BED0B-2842-AD41-6762-4C31F535210D">
+<sourceConnName>docker-SCOTT</sourceConnName>
+<sourceObjSchema>ACCOUNTANT</sourceObjSchema>
+<sourceObjName>ID</sourceObjName>
+<createdBy>linakim</createdBy>
+<createdTime>2020-06-07 12:48:54 UTC</createdTime>
+<commentInRDBMS><![CDATA[아이디]]></commentInRDBMS>
+<ownerDesignName>modeling</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>12 BYTE</dataTypeSize>
+<ownDataTypeParameters>12 BYTE,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="PW" id="4FC7DDC9-DEA5-7940-6C1D-905C5C80B2B5">
+<sourceConnName>docker-SCOTT</sourceConnName>
+<sourceObjSchema>ACCOUNTANT</sourceObjSchema>
+<sourceObjName>PW</sourceObjName>
+<createdBy>linakim</createdBy>
+<createdTime>2020-06-07 12:48:54 UTC</createdTime>
+<commentInRDBMS><![CDATA[비밀번호]]></commentInRDBMS>
+<ownerDesignName>modeling</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>12 BYTE</dataTypeSize>
+<ownDataTypeParameters>12 BYTE,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="PHONE" id="369BBC76-DF86-923A-A651-CFC68DBE562F">
+<sourceConnName>docker-SCOTT</sourceConnName>
+<sourceObjSchema>ACCOUNTANT</sourceObjSchema>
+<sourceObjName>PHONE</sourceObjName>
+<createdBy>linakim</createdBy>
+<createdTime>2020-06-07 12:48:54 UTC</createdTime>
+<commentInRDBMS><![CDATA[연락처]]></commentInRDBMS>
+<ownerDesignName>modeling</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>13 BYTE</dataTypeSize>
+<ownDataTypeParameters>13 BYTE,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+</columns>
+<indexes itemClass="oracle.dbtools.crest.model.design.relational.Index">
+<ind_PK_UK id="B590CCC4-9360-16CC-ED97-FCE5529E7ECB" name="PK_ACCOUNTANT">
+<sourceConnName>docker-SCOTT</sourceConnName>
+<sourceObjSchema>SCOTT</sourceObjSchema>
+<sourceObjName>PK_ACCOUNTANT</sourceObjName>
+<createdBy>linakim</createdBy>
+<createdTime>2020-06-07 12:48:56 UTC</createdTime>
+<ownerDesignName>modeling</ownerDesignName>
+<pk>true</pk>
+<indexState>Primary Constraint</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="B488DC66-84A2-3DDB-F5CA-E0862DBDFC78"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="A7296E4A-AAAC-1D72-098E-392633488A03" name="UK_ACCOUNTANT">
+<sourceConnName>docker-SCOTT</sourceConnName>
+<sourceObjSchema>SCOTT</sourceObjSchema>
+<sourceObjName>UK_ACCOUNTANT</sourceObjName>
+<createdBy>linakim</createdBy>
+<createdTime>2020-06-07 12:48:56 UTC</createdTime>
+<ownerDesignName>modeling</ownerDesignName>
+<indexState>Unique Constraint</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="C34BED0B-2842-AD41-6762-4C31F535210D"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="BB217DE2-51F6-FC39-7AD0-051DEE7303B2" schemaObject="46EDA0A3-B1D4-46E7-96DB-5EAB25FE3991" name="PK_ACCOUNTANT">
+<sourceConnName>docker-SCOTT</sourceConnName>
+<sourceObjSchema>SCOTT</sourceObjSchema>
+<sourceObjName>PK_ACCOUNTANT</sourceObjName>
+<createdBy>linakim</createdBy>
+<createdTime>2020-06-07 12:48:55 UTC</createdTime>
+<ownerDesignName>modeling</ownerDesignName>
+<indexState>Unique Plain Index</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="B488DC66-84A2-3DDB-F5CA-E0862DBDFC78"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="DFC77F21-AFBD-4F2D-9552-DE62A52AA311" schemaObject="46EDA0A3-B1D4-46E7-96DB-5EAB25FE3991" name="UK_ACCOUNTANT">
+<sourceConnName>docker-SCOTT</sourceConnName>
+<sourceObjSchema>SCOTT</sourceObjSchema>
+<sourceObjName>UK_ACCOUNTANT</sourceObjName>
+<createdBy>linakim</createdBy>
+<createdTime>2020-06-07 12:48:55 UTC</createdTime>
+<ownerDesignName>modeling</ownerDesignName>
+<indexState>Unique Plain Index</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="C34BED0B-2842-AD41-6762-4C31F535210D"/>
+</indexColumnUsage>
+</ind_PK_UK>
+</indexes>
+</Table>

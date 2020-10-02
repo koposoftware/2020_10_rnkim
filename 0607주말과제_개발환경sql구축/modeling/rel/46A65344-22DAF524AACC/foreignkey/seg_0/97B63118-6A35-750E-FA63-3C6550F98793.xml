@@ -1,0 +1,19 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<FKIndexAssociation class="oracle.dbtools.crest.model.design.relational.FKIndexAssociation" directorySegmentName="seg_0" id="97B63118-6A35-750E-FA63-3C6550F98793" containerWithKeyObject="287AE77F-9764-2B1A-9957-205A3960B69E" localFKIndex="128EA406-A96C-5FA3-0B7C-7B98ACDDE855" name="FK_CORP_TO_CREDIT_RANK_HISTORY">
+<sourceConnName>docker-SCOTT</sourceConnName>
+<sourceObjSchema>SCOTT</sourceObjSchema>
+<sourceObjName>FK_CORP_TO_CREDIT_RANK_HISTORY</sourceObjName>
+<createdBy>linakim</createdBy>
+<createdTime>2020-06-07 12:48:57 UTC</createdTime>
+<ownerDesignName>modeling</ownerDesignName>
+<referredTableLongName>SCOTT.CORP</referredTableLongName>
+<deleteRule>NO ACTION</deleteRule>
+<referredTableID>C27932DD-E854-5C04-6A89-70FE68C1F9B7</referredTableID>
+<keyObject>DBA1F625-959E-D721-D186-76FDFFBAED2F</keyObject>
+<referredKeyID>DBA1F625-959E-D721-D186-76FDFFBAED2F</referredKeyID>
+<mandatory>true</mandatory>
+<refColNames>CORP_ID</refColNames>
+<transferable>true</transferable>
+<rely>false</rely>
+<columnDependencyConstraintGenerateInDDL>true</columnDependencyConstraintGenerateInDDL>
+</FKIndexAssociation>

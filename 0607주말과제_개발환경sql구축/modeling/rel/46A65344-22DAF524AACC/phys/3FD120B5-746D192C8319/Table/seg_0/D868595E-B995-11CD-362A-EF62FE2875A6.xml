@@ -1,0 +1,72 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<TableProxyOraclev12c class="oracle.dbtools.crest.model.design.storage.oracle.v12c.TableProxyOraclev12c" name="CASH_FLOW" directorySegmentName="seg_0" id="D868595E-B995-11CD-362A-EF62FE2875A6">
+<createdBy>linakim</createdBy>
+<createdTime>2020-06-07 12:48:53 UTC</createdTime>
+<ownerDesignName>modeling</ownerDesignName>
+<schemaObject>46EDA0A3-B1D4-46E7-96DB-5EAB25FE3991</schemaObject>
+<logging>YES</logging>
+<partitionedRowMovement>DISABLE</partitionedRowMovement>
+<segment>1CBD980A-DBDA-5B65-88C8-877D5F10D17C</segment>
+<tableSpace>41F2DE3A-60A3-EC2F-D1DC-43ECAD5C3F8B</tableSpace>
+<temporaryChanged>false</temporaryChanged>
+<accessDriverType>oracle_loader</accessDriverType>
+<rejectLimit></rejectLimit>
+<inMemory>NO</inMemory>
+<columnProxies itemClass="oracle.dbtools.crest.model.design.storage.oracle.v12c.ColumnProxyOraclev12c">
+<ColumnProxy name="TURN" id="0F6FE3FE-2F36-FE5D-BBB4-C03BDBBB3559">
+<createdBy>linakim</createdBy>
+<createdTime>2020-06-07 12:48:54 UTC</createdTime>
+<ownerDesignName>modeling</ownerDesignName>
+</ColumnProxy>
+<ColumnProxy name="CORP_ID" id="59CD3C2D-7D87-58D2-4F38-D5B1A8294099">
+<createdBy>linakim</createdBy>
+<createdTime>2020-06-07 12:48:54 UTC</createdTime>
+<ownerDesignName>modeling</ownerDesignName>
+</ColumnProxy>
+<ColumnProxy name="INVST_CF" id="B0CCE27F-74D2-7828-4790-E87C28C213BF">
+<createdBy>linakim</createdBy>
+<createdTime>2020-06-07 12:48:54 UTC</createdTime>
+<ownerDesignName>modeling</ownerDesignName>
+</ColumnProxy>
+<ColumnProxy name="SALES_CF" id="C751D913-79C5-CF28-36C4-767D889EB09E">
+<createdBy>linakim</createdBy>
+<createdTime>2020-06-07 12:48:54 UTC</createdTime>
+<ownerDesignName>modeling</ownerDesignName>
+</ColumnProxy>
+<ColumnProxy name="FIN_CF" id="E283F881-71F4-3A88-5E4E-A8A6327FC9B9">
+<createdBy>linakim</createdBy>
+<createdTime>2020-06-07 12:48:54 UTC</createdTime>
+<ownerDesignName>modeling</ownerDesignName>
+</ColumnProxy>
+</columnProxies>
+<indexProxies>
+<IndexProxy class="oracle.dbtools.crest.model.design.storage.oracle.v10g.IndexProxyOraclev10g" name="PK_CASH_FLOW" id="FADA2A19-D8A1-EBCE-F57A-E72AD5625ADC">
+<createdBy>linakim</createdBy>
+<createdTime>2020-06-07 12:48:55 UTC</createdTime>
+<ownerDesignName>modeling</ownerDesignName>
+<schemaObject>46EDA0A3-B1D4-46E7-96DB-5EAB25FE3991</schemaObject>
+<segment>3BBC5A7A-CC71-AE68-700F-E0071F008158</segment>
+<tableSpace>41F2DE3A-60A3-EC2F-D1DC-43ECAD5C3F8B</tableSpace>
+</IndexProxy>
+</indexProxies>
+<foreignKeys>
+<ForeignKey class="oracle.dbtools.crest.model.design.storage.oracle.v10g.FKProxyOraclev10g" name="FK_FNC_STMT_TO_CASH_FLOW" id="F92A117D-91A4-9B67-2534-210040E00DF0">
+<createdBy>linakim</createdBy>
+<createdTime>2020-06-07 12:48:57 UTC</createdTime>
+<ownerDesignName>modeling</ownerDesignName>
+</ForeignKey>
+</foreignKeys>
+<primaryKeys>
+<PrimaryKey class="oracle.dbtools.crest.model.design.storage.oracle.v10g.PKProxyOraclev10g" name="PK_CASH_FLOW" id="55717666-EA23-3367-C26F-1D9657B3F7C5">
+<createdBy>linakim</createdBy>
+<createdTime>2020-06-07 12:48:57 UTC</createdTime>
+<ownerDesignName>modeling</ownerDesignName>
+<segment>3BBC5A7A-CC71-AE68-700F-E0071F008158</segment>
+<tableSpace>41F2DE3A-60A3-EC2F-D1DC-43ECAD5C3F8B</tableSpace>
+<existingIndex>FADA2A19-D8A1-EBCE-F57A-E72AD5625ADC</existingIndex>
+<indexSegment>3BBC5A7A-CC71-AE68-700F-E0071F008158</indexSegment>
+<indexSort>SORTED</indexSort>
+<usingIndex>BY INDEX NAME</usingIndex>
+</PrimaryKey>
+</primaryKeys>
+</TableProxyOraclev12c>

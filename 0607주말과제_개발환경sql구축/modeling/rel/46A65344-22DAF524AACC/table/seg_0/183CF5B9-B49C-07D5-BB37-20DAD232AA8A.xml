@@ -1,0 +1,218 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_0" id="183CF5B9-B49C-07D5-BB37-20DAD232AA8A" schemaObject="46EDA0A3-B1D4-46E7-96DB-5EAB25FE3991" name="FS_STATUS">
+<sourceConnName>docker-SCOTT</sourceConnName>
+<sourceObjSchema>SCOTT</sourceObjSchema>
+<sourceObjName>FS_STATUS</sourceObjName>
+<createdBy>linakim</createdBy>
+<createdTime>2020-06-07 12:48:53 UTC</createdTime>
+<commentInRDBMS><![CDATA[재무상태표]]></commentInRDBMS>
+<ownerDesignName>modeling</ownerDesignName>
+<allowColumnReorder>false</allowColumnReorder>
+<existDependencyGenerateInDDl>true</existDependencyGenerateInDDl>
+<parsed>true</parsed>
+<columns itemClass="oracle.dbtools.crest.model.design.relational.Column">
+<Column name="CORP_ID" id="585B30AD-9898-51FE-7984-7668D1FAE933">
+<sourceConnName>docker-SCOTT</sourceConnName>
+<sourceObjSchema>FS_STATUS</sourceObjSchema>
+<sourceObjName>CORP_ID</sourceObjName>
+<createdBy>linakim</createdBy>
+<createdTime>2020-06-07 12:48:54 UTC</createdTime>
+<commentInRDBMS><![CDATA[기업아이디]]></commentInRDBMS>
+<ownerDesignName>modeling</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>12 BYTE</dataTypeSize>
+<ownDataTypeParameters>12 BYTE,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="02D08C3B-C777-464E-B841-731F71CC72FE" referredColumn="083213B9-B6EA-95D8-A451-5DFAC4DA9980"/>
+</associations>
+</Column>
+<Column name="TURN" id="CAC3F4C2-12ED-10FD-F505-F4D23C2D46D2">
+<sourceConnName>docker-SCOTT</sourceConnName>
+<sourceObjSchema>FS_STATUS</sourceObjSchema>
+<sourceObjName>TURN</sourceObjName>
+<createdBy>linakim</createdBy>
+<createdTime>2020-06-07 12:48:54 UTC</createdTime>
+<commentInRDBMS><![CDATA[회차]]></commentInRDBMS>
+<ownerDesignName>modeling</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="02D08C3B-C777-464E-B841-731F71CC72FE" referredColumn="3231BE67-6BF2-8469-5775-FD5725DDE9F9"/>
+</associations>
+</Column>
+<Column name="CURR_AST" id="E0F92DB0-9B38-96BB-7D04-EAFED01187A2">
+<sourceConnName>docker-SCOTT</sourceConnName>
+<sourceObjSchema>FS_STATUS</sourceObjSchema>
+<sourceObjName>CURR_AST</sourceObjName>
+<createdBy>linakim</createdBy>
+<createdTime>2020-06-07 12:48:54 UTC</createdTime>
+<commentInRDBMS><![CDATA[유동자산]]></commentInRDBMS>
+<ownerDesignName>modeling</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="NON_CURR_AST" id="5FC9B903-188F-6A0C-D073-F9E81AC10A7A">
+<sourceConnName>docker-SCOTT</sourceConnName>
+<sourceObjSchema>FS_STATUS</sourceObjSchema>
+<sourceObjName>NON_CURR_AST</sourceObjName>
+<createdBy>linakim</createdBy>
+<createdTime>2020-06-07 12:48:54 UTC</createdTime>
+<commentInRDBMS><![CDATA[비유동자산]]></commentInRDBMS>
+<ownerDesignName>modeling</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="TTL_AST" id="50B775C0-5AD9-63A9-40C9-FB9D5E989C37">
+<sourceConnName>docker-SCOTT</sourceConnName>
+<sourceObjSchema>FS_STATUS</sourceObjSchema>
+<sourceObjName>TTL_AST</sourceObjName>
+<createdBy>linakim</createdBy>
+<createdTime>2020-06-07 12:48:54 UTC</createdTime>
+<commentInRDBMS><![CDATA[자산총계]]></commentInRDBMS>
+<ownerDesignName>modeling</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="CURR_LIAB" id="7CB4943C-2A5F-C793-2DBA-AA8841A7A90D">
+<sourceConnName>docker-SCOTT</sourceConnName>
+<sourceObjSchema>FS_STATUS</sourceObjSchema>
+<sourceObjName>CURR_LIAB</sourceObjName>
+<createdBy>linakim</createdBy>
+<createdTime>2020-06-07 12:48:54 UTC</createdTime>
+<commentInRDBMS><![CDATA[유동부채]]></commentInRDBMS>
+<ownerDesignName>modeling</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="NON_CURR_LIAB" id="B816B8D7-D983-E672-2782-52E8CF480361">
+<sourceConnName>docker-SCOTT</sourceConnName>
+<sourceObjSchema>FS_STATUS</sourceObjSchema>
+<sourceObjName>NON_CURR_LIAB</sourceObjName>
+<createdBy>linakim</createdBy>
+<createdTime>2020-06-07 12:48:54 UTC</createdTime>
+<commentInRDBMS><![CDATA[비유동부채]]></commentInRDBMS>
+<ownerDesignName>modeling</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="TTL_LIAB" id="69EEB44E-2A09-E73B-110E-6B034C6F1F98">
+<sourceConnName>docker-SCOTT</sourceConnName>
+<sourceObjSchema>FS_STATUS</sourceObjSchema>
+<sourceObjName>TTL_LIAB</sourceObjName>
+<createdBy>linakim</createdBy>
+<createdTime>2020-06-07 12:48:54 UTC</createdTime>
+<commentInRDBMS><![CDATA[부채총계]]></commentInRDBMS>
+<ownerDesignName>modeling</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="CAPITAL" id="8FF0BA9F-89D1-F685-D0F5-E3B9DC2091CB">
+<sourceConnName>docker-SCOTT</sourceConnName>
+<sourceObjSchema>FS_STATUS</sourceObjSchema>
+<sourceObjName>CAPITAL</sourceObjName>
+<createdBy>linakim</createdBy>
+<createdTime>2020-06-07 12:48:54 UTC</createdTime>
+<commentInRDBMS><![CDATA[자본]]></commentInRDBMS>
+<ownerDesignName>modeling</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="ERND_SPLUS" id="D6EB8C71-C124-2121-1C88-151B0E999F49">
+<sourceConnName>docker-SCOTT</sourceConnName>
+<sourceObjSchema>FS_STATUS</sourceObjSchema>
+<sourceObjName>ERND_SPLUS</sourceObjName>
+<createdBy>linakim</createdBy>
+<createdTime>2020-06-07 12:48:54 UTC</createdTime>
+<commentInRDBMS><![CDATA[이익잉여금]]></commentInRDBMS>
+<ownerDesignName>modeling</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="TTL_CAPITAL" id="24D7E756-B4DB-ABC6-68E2-31ED23854D1A">
+<sourceConnName>docker-SCOTT</sourceConnName>
+<sourceObjSchema>FS_STATUS</sourceObjSchema>
+<sourceObjName>TTL_CAPITAL</sourceObjName>
+<createdBy>linakim</createdBy>
+<createdTime>2020-06-07 12:48:54 UTC</createdTime>
+<commentInRDBMS><![CDATA[자본총계]]></commentInRDBMS>
+<ownerDesignName>modeling</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+</columns>
+<indexes itemClass="oracle.dbtools.crest.model.design.relational.Index">
+<ind_PK_UK id="F1D14010-D0BC-C5ED-665F-9FBF32E9FA99" name="PK_FS_STATUS">
+<sourceConnName>docker-SCOTT</sourceConnName>
+<sourceObjSchema>SCOTT</sourceObjSchema>
+<sourceObjName>PK_FS_STATUS</sourceObjName>
+<createdBy>linakim</createdBy>
+<createdTime>2020-06-07 12:48:57 UTC</createdTime>
+<ownerDesignName>modeling</ownerDesignName>
+<pk>true</pk>
+<indexState>Primary Constraint</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="585B30AD-9898-51FE-7984-7668D1FAE933"/>
+<colUsage columnID="CAC3F4C2-12ED-10FD-F505-F4D23C2D46D2"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="D24062CD-2AAE-E818-7689-97B49CECC543" schemaObject="46EDA0A3-B1D4-46E7-96DB-5EAB25FE3991" name="PK_FS_STATUS">
+<sourceConnName>docker-SCOTT</sourceConnName>
+<sourceObjSchema>SCOTT</sourceObjSchema>
+<sourceObjName>PK_FS_STATUS</sourceObjName>
+<createdBy>linakim</createdBy>
+<createdTime>2020-06-07 12:48:55 UTC</createdTime>
+<ownerDesignName>modeling</ownerDesignName>
+<indexState>Unique Plain Index</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="585B30AD-9898-51FE-7984-7668D1FAE933"/>
+<colUsage columnID="CAC3F4C2-12ED-10FD-F505-F4D23C2D46D2"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="E3DDF0B8-21AC-FCA5-8C71-972B3F230512" name="FK_FNC_STMT_TO_FS_STATUS">
+<createdBy>linakim</createdBy>
+<createdTime>2020-06-07 12:48:57 UTC</createdTime>
+<ownerDesignName>modeling</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="585B30AD-9898-51FE-7984-7668D1FAE933"/>
+<colUsage columnID="CAC3F4C2-12ED-10FD-F505-F4D23C2D46D2"/>
+</indexColumnUsage>
+</ind_PK_UK>
+</indexes>
+</Table>

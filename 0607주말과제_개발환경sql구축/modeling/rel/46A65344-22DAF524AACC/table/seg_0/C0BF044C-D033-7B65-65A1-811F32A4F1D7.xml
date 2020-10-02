@@ -1,0 +1,103 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_0" id="C0BF044C-D033-7B65-65A1-811F32A4F1D7" schemaObject="46EDA0A3-B1D4-46E7-96DB-5EAB25FE3991" name="FNC_STMT">
+<sourceConnName>docker-SCOTT</sourceConnName>
+<sourceObjSchema>SCOTT</sourceObjSchema>
+<sourceObjName>FNC_STMT</sourceObjName>
+<createdBy>linakim</createdBy>
+<createdTime>2020-06-07 12:48:53 UTC</createdTime>
+<commentInRDBMS><![CDATA[재무제표]]></commentInRDBMS>
+<ownerDesignName>modeling</ownerDesignName>
+<allowColumnReorder>false</allowColumnReorder>
+<existDependencyGenerateInDDl>true</existDependencyGenerateInDDl>
+<parsed>true</parsed>
+<columns itemClass="oracle.dbtools.crest.model.design.relational.Column">
+<Column name="CORP_ID" id="083213B9-B6EA-95D8-A451-5DFAC4DA9980">
+<sourceConnName>docker-SCOTT</sourceConnName>
+<sourceObjSchema>FNC_STMT</sourceObjSchema>
+<sourceObjName>CORP_ID</sourceObjName>
+<createdBy>linakim</createdBy>
+<createdTime>2020-06-07 12:48:54 UTC</createdTime>
+<commentInRDBMS><![CDATA[기업아이디]]></commentInRDBMS>
+<ownerDesignName>modeling</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>12 BYTE</dataTypeSize>
+<ownDataTypeParameters>12 BYTE,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="86AA1A2D-4F47-35C1-33C2-5134F955F1FF" referredColumn="B9384936-7D06-E1BF-EFDC-E30B37C3B3B7"/>
+</associations>
+</Column>
+<Column name="TURN" id="3231BE67-6BF2-8469-5775-FD5725DDE9F9">
+<sourceConnName>docker-SCOTT</sourceConnName>
+<sourceObjSchema>FNC_STMT</sourceObjSchema>
+<sourceObjName>TURN</sourceObjName>
+<createdBy>linakim</createdBy>
+<createdTime>2020-06-07 12:48:54 UTC</createdTime>
+<commentInRDBMS><![CDATA[회차]]></commentInRDBMS>
+<ownerDesignName>modeling</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="REG_DATE" id="F0944B88-9F46-E358-3113-24F153066791">
+<sourceConnName>docker-SCOTT</sourceConnName>
+<sourceObjSchema>FNC_STMT</sourceObjSchema>
+<sourceObjName>REG_DATE</sourceObjName>
+<createdBy>linakim</createdBy>
+<createdTime>2020-06-07 12:48:54 UTC</createdTime>
+<commentInRDBMS><![CDATA[등록일]]></commentInRDBMS>
+<ownerDesignName>modeling</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT007</logicalDatatype>
+<dataTypeSize>7</dataTypeSize>
+<ownDataTypeParameters>7,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+</columns>
+<indexes itemClass="oracle.dbtools.crest.model.design.relational.Index">
+<ind_PK_UK id="BD29BE0A-6505-17FC-5463-F6F8B070C0AC" name="PK_FNC_STMT">
+<sourceConnName>docker-SCOTT</sourceConnName>
+<sourceObjSchema>SCOTT</sourceObjSchema>
+<sourceObjName>PK_FNC_STMT</sourceObjName>
+<createdBy>linakim</createdBy>
+<createdTime>2020-06-07 12:48:57 UTC</createdTime>
+<ownerDesignName>modeling</ownerDesignName>
+<pk>true</pk>
+<indexState>Primary Constraint</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="083213B9-B6EA-95D8-A451-5DFAC4DA9980"/>
+<colUsage columnID="3231BE67-6BF2-8469-5775-FD5725DDE9F9"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="87B6C86F-50A5-E29C-484D-546DA169B937" schemaObject="46EDA0A3-B1D4-46E7-96DB-5EAB25FE3991" name="PK_FNC_STMT">
+<sourceConnName>docker-SCOTT</sourceConnName>
+<sourceObjSchema>SCOTT</sourceObjSchema>
+<sourceObjName>PK_FNC_STMT</sourceObjName>
+<createdBy>linakim</createdBy>
+<createdTime>2020-06-07 12:48:55 UTC</createdTime>
+<ownerDesignName>modeling</ownerDesignName>
+<indexState>Unique Plain Index</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="083213B9-B6EA-95D8-A451-5DFAC4DA9980"/>
+<colUsage columnID="3231BE67-6BF2-8469-5775-FD5725DDE9F9"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="A07F5558-A798-3FCC-4630-87621C5668FC" name="FK_CORP_TO_FNC_STMT">
+<createdBy>linakim</createdBy>
+<createdTime>2020-06-07 12:48:57 UTC</createdTime>
+<ownerDesignName>modeling</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="083213B9-B6EA-95D8-A451-5DFAC4DA9980"/>
+</indexColumnUsage>
+</ind_PK_UK>
+</indexes>
+</Table>

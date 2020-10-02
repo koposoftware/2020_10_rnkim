@@ -1,0 +1,72 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<TableProxyOraclev12c class="oracle.dbtools.crest.model.design.storage.oracle.v12c.TableProxyOraclev12c" name="ICM_STMT" directorySegmentName="seg_0" id="EA00963E-417D-0AA0-18AA-AF3A1F8869D0">
+<createdBy>linakim</createdBy>
+<createdTime>2020-06-07 12:48:53 UTC</createdTime>
+<ownerDesignName>modeling</ownerDesignName>
+<schemaObject>46EDA0A3-B1D4-46E7-96DB-5EAB25FE3991</schemaObject>
+<logging>YES</logging>
+<partitionedRowMovement>DISABLE</partitionedRowMovement>
+<segment>1CBD980A-DBDA-5B65-88C8-877D5F10D17C</segment>
+<tableSpace>41F2DE3A-60A3-EC2F-D1DC-43ECAD5C3F8B</tableSpace>
+<temporaryChanged>false</temporaryChanged>
+<accessDriverType>oracle_loader</accessDriverType>
+<rejectLimit></rejectLimit>
+<inMemory>NO</inMemory>
+<columnProxies itemClass="oracle.dbtools.crest.model.design.storage.oracle.v12c.ColumnProxyOraclev12c">
+<ColumnProxy name="SALES" id="4F01DE5D-98F4-C61D-C626-C100EF808529">
+<createdBy>linakim</createdBy>
+<createdTime>2020-06-07 12:48:54 UTC</createdTime>
+<ownerDesignName>modeling</ownerDesignName>
+</ColumnProxy>
+<ColumnProxy name="TURN" id="6B038412-51FF-4600-C645-82A73A3D53A5">
+<createdBy>linakim</createdBy>
+<createdTime>2020-06-07 12:48:54 UTC</createdTime>
+<ownerDesignName>modeling</ownerDesignName>
+</ColumnProxy>
+<ColumnProxy name="CORP_ID" id="89400DD2-882F-4668-8774-A6D9D3DA4581">
+<createdBy>linakim</createdBy>
+<createdTime>2020-06-07 12:48:54 UTC</createdTime>
+<ownerDesignName>modeling</ownerDesignName>
+</ColumnProxy>
+<ColumnProxy name="NET_INCM" id="9BA222ED-DC03-689B-D6EE-B737B43B912A">
+<createdBy>linakim</createdBy>
+<createdTime>2020-06-07 12:48:54 UTC</createdTime>
+<ownerDesignName>modeling</ownerDesignName>
+</ColumnProxy>
+<ColumnProxy name="BUSI_PROFITS" id="D18D6FFE-A44B-7E2B-68AF-EFBA0BD71BA5">
+<createdBy>linakim</createdBy>
+<createdTime>2020-06-07 12:48:54 UTC</createdTime>
+<ownerDesignName>modeling</ownerDesignName>
+</ColumnProxy>
+</columnProxies>
+<indexProxies>
+<IndexProxy class="oracle.dbtools.crest.model.design.storage.oracle.v10g.IndexProxyOraclev10g" name="PK_ICM_STMT" id="D1016EE4-CBC3-0576-EE24-0E75ACFAAE1A">
+<createdBy>linakim</createdBy>
+<createdTime>2020-06-07 12:48:55 UTC</createdTime>
+<ownerDesignName>modeling</ownerDesignName>
+<schemaObject>46EDA0A3-B1D4-46E7-96DB-5EAB25FE3991</schemaObject>
+<segment>3BBC5A7A-CC71-AE68-700F-E0071F008158</segment>
+<tableSpace>41F2DE3A-60A3-EC2F-D1DC-43ECAD5C3F8B</tableSpace>
+</IndexProxy>
+</indexProxies>
+<foreignKeys>
+<ForeignKey class="oracle.dbtools.crest.model.design.storage.oracle.v10g.FKProxyOraclev10g" name="FK_FNC_STMT_TO_ICM_STMT" id="95BEFD27-3F7F-39EE-6BCC-11E283DA5B53">
+<createdBy>linakim</createdBy>
+<createdTime>2020-06-07 12:48:57 UTC</createdTime>
+<ownerDesignName>modeling</ownerDesignName>
+</ForeignKey>
+</foreignKeys>
+<primaryKeys>
+<PrimaryKey class="oracle.dbtools.crest.model.design.storage.oracle.v10g.PKProxyOraclev10g" name="PK_ICM_STMT" id="370A5A29-06BA-91FB-2728-29D24322D7B3">
+<createdBy>linakim</createdBy>
+<createdTime>2020-06-07 12:48:57 UTC</createdTime>
+<ownerDesignName>modeling</ownerDesignName>
+<segment>3BBC5A7A-CC71-AE68-700F-E0071F008158</segment>
+<tableSpace>41F2DE3A-60A3-EC2F-D1DC-43ECAD5C3F8B</tableSpace>
+<existingIndex>D1016EE4-CBC3-0576-EE24-0E75ACFAAE1A</existingIndex>
+<indexSegment>3BBC5A7A-CC71-AE68-700F-E0071F008158</indexSegment>
+<indexSort>SORTED</indexSort>
+<usingIndex>BY INDEX NAME</usingIndex>
+</PrimaryKey>
+</primaryKeys>
+</TableProxyOraclev12c>

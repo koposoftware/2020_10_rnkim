@@ -1,0 +1,134 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_0" id="287AE77F-9764-2B1A-9957-205A3960B69E" schemaObject="46EDA0A3-B1D4-46E7-96DB-5EAB25FE3991" name="CREDIT_RANK_HISTORY">
+<sourceConnName>docker-SCOTT</sourceConnName>
+<sourceObjSchema>SCOTT</sourceObjSchema>
+<sourceObjName>CREDIT_RANK_HISTORY</sourceObjName>
+<createdBy>linakim</createdBy>
+<createdTime>2020-06-07 12:48:53 UTC</createdTime>
+<commentInRDBMS><![CDATA[신용등급이력]]></commentInRDBMS>
+<ownerDesignName>modeling</ownerDesignName>
+<allowColumnReorder>false</allowColumnReorder>
+<existDependencyGenerateInDDl>true</existDependencyGenerateInDDl>
+<parsed>true</parsed>
+<columns itemClass="oracle.dbtools.crest.model.design.relational.Column">
+<Column name="CORP_ID" id="D623C152-3D99-7045-C893-3BE538A7C7D3">
+<sourceConnName>docker-SCOTT</sourceConnName>
+<sourceObjSchema>CREDIT_RANK_HISTORY</sourceObjSchema>
+<sourceObjName>CORP_ID</sourceObjName>
+<createdBy>linakim</createdBy>
+<createdTime>2020-06-07 12:48:54 UTC</createdTime>
+<commentInRDBMS><![CDATA[기업아이디]]></commentInRDBMS>
+<ownerDesignName>modeling</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>12 BYTE</dataTypeSize>
+<ownDataTypeParameters>12 BYTE,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="97B63118-6A35-750E-FA63-3C6550F98793" referredColumn="B9384936-7D06-E1BF-EFDC-E30B37C3B3B7"/>
+</associations>
+</Column>
+<Column name="RNK_DATE" id="A9E6EBBA-5F8E-02BC-1BEC-69A98C2EDB97">
+<sourceConnName>docker-SCOTT</sourceConnName>
+<sourceObjSchema>CREDIT_RANK_HISTORY</sourceObjSchema>
+<sourceObjName>RNK_DATE</sourceObjName>
+<createdBy>linakim</createdBy>
+<createdTime>2020-06-07 12:48:54 UTC</createdTime>
+<commentInRDBMS><![CDATA[산정일]]></commentInRDBMS>
+<ownerDesignName>modeling</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT007</logicalDatatype>
+<dataTypeSize>7</dataTypeSize>
+<ownDataTypeParameters>7,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="FNC_STMT_DATE" id="A25688C0-BCA7-4381-7C52-8FB656402B95">
+<sourceConnName>docker-SCOTT</sourceConnName>
+<sourceObjSchema>CREDIT_RANK_HISTORY</sourceObjSchema>
+<sourceObjName>FNC_STMT_DATE</sourceObjName>
+<createdBy>linakim</createdBy>
+<createdTime>2020-06-07 12:48:54 UTC</createdTime>
+<commentInRDBMS><![CDATA[재무기준일]]></commentInRDBMS>
+<ownerDesignName>modeling</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT007</logicalDatatype>
+<dataTypeSize>7</dataTypeSize>
+<ownDataTypeParameters>7,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="CREDIT_RNK" id="30B00EF9-982B-4752-0A21-F35AF69B4C1A">
+<sourceConnName>docker-SCOTT</sourceConnName>
+<sourceObjSchema>CREDIT_RANK_HISTORY</sourceObjSchema>
+<sourceObjName>CREDIT_RNK</sourceObjName>
+<createdBy>linakim</createdBy>
+<createdTime>2020-06-07 12:48:54 UTC</createdTime>
+<commentInRDBMS><![CDATA[신용등급]]></commentInRDBMS>
+<ownerDesignName>modeling</ownerDesignName>
+<constraintName>CHK_CREDIT_RANK_HIS</constraintName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>3 BYTE</dataTypeSize>
+<checkConstraint>
+<implementationDef dbType="Generic Constraint" definition="
+			credit_rnk
+			IN (
+				&apos;AAA&apos;, &apos;AA&apos;, &apos;A&apos;, &apos;BBB&apos;, &apos;BB&apos;, &apos;B&apos;, &apos;CCC&apos;, &apos;CC&apos;, &apos;C&apos;, &apos;D&apos;, &apos;R&apos;
+			)
+		"/>
+<implementationDef dbType="Oracle Database 12c" definition="
+			credit_rnk
+			IN (
+				&apos;AAA&apos;, &apos;AA&apos;, &apos;A&apos;, &apos;BBB&apos;, &apos;BB&apos;, &apos;B&apos;, &apos;CCC&apos;, &apos;CC&apos;, &apos;C&apos;, &apos;D&apos;, &apos;R&apos;
+			)
+		"/>
+</checkConstraint>
+<ownDataTypeParameters>3 BYTE,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+</columns>
+<indexes itemClass="oracle.dbtools.crest.model.design.relational.Index">
+<ind_PK_UK id="976FA660-09F1-1EE2-633A-A95603BCBDA5" name="PK_CREDIT_RANK_HISTORY">
+<sourceConnName>docker-SCOTT</sourceConnName>
+<sourceObjSchema>SCOTT</sourceObjSchema>
+<sourceObjName>PK_CREDIT_RANK_HISTORY</sourceObjName>
+<createdBy>linakim</createdBy>
+<createdTime>2020-06-07 12:48:57 UTC</createdTime>
+<ownerDesignName>modeling</ownerDesignName>
+<pk>true</pk>
+<indexState>Primary Constraint</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="D623C152-3D99-7045-C893-3BE538A7C7D3"/>
+<colUsage columnID="A9E6EBBA-5F8E-02BC-1BEC-69A98C2EDB97"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="D6188BA5-D335-4CDF-CEB0-812C5F2FB869" schemaObject="46EDA0A3-B1D4-46E7-96DB-5EAB25FE3991" name="PK_CREDIT_RANK_HISTORY">
+<sourceConnName>docker-SCOTT</sourceConnName>
+<sourceObjSchema>SCOTT</sourceObjSchema>
+<sourceObjName>PK_CREDIT_RANK_HISTORY</sourceObjName>
+<createdBy>linakim</createdBy>
+<createdTime>2020-06-07 12:48:55 UTC</createdTime>
+<ownerDesignName>modeling</ownerDesignName>
+<indexState>Unique Plain Index</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="D623C152-3D99-7045-C893-3BE538A7C7D3"/>
+<colUsage columnID="A9E6EBBA-5F8E-02BC-1BEC-69A98C2EDB97"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="128EA406-A96C-5FA3-0B7C-7B98ACDDE855" name="FK_CORP_TO_CREDIT_RANK_HISTORY">
+<createdBy>linakim</createdBy>
+<createdTime>2020-06-07 12:48:57 UTC</createdTime>
+<ownerDesignName>modeling</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="D623C152-3D99-7045-C893-3BE538A7C7D3"/>
+</indexColumnUsage>
+</ind_PK_UK>
+</indexes>
+</Table>

@@ -1,0 +1,89 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_0" id="82876D4E-15A6-00B9-F206-53F32CC6F200" schemaObject="46EDA0A3-B1D4-46E7-96DB-5EAB25FE3991" name="REP">
+<sourceConnName>docker-SCOTT</sourceConnName>
+<sourceObjSchema>SCOTT</sourceObjSchema>
+<sourceObjName>REP</sourceObjName>
+<createdBy>linakim</createdBy>
+<createdTime>2020-06-07 12:48:53 UTC</createdTime>
+<commentInRDBMS><![CDATA[대표자]]></commentInRDBMS>
+<ownerDesignName>modeling</ownerDesignName>
+<allowColumnReorder>false</allowColumnReorder>
+<existDependencyGenerateInDDl>true</existDependencyGenerateInDDl>
+<parsed>true</parsed>
+<columns itemClass="oracle.dbtools.crest.model.design.relational.Column">
+<Column name="CORP_ID" id="4EBDF4F8-8B89-B048-9636-4C8B20547CFA">
+<sourceConnName>docker-SCOTT</sourceConnName>
+<sourceObjSchema>REP</sourceObjSchema>
+<sourceObjName>CORP_ID</sourceObjName>
+<createdBy>linakim</createdBy>
+<createdTime>2020-06-07 12:48:54 UTC</createdTime>
+<commentInRDBMS><![CDATA[기업아이디]]></commentInRDBMS>
+<ownerDesignName>modeling</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>12 BYTE</dataTypeSize>
+<ownDataTypeParameters>12 BYTE,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="4A424232-6B38-0FE0-F24A-0618DDBFCF6A" referredColumn="B9384936-7D06-E1BF-EFDC-E30B37C3B3B7"/>
+</associations>
+</Column>
+<Column name="REP_NAME" id="7E0E6FC3-6AAB-ADF3-8EA8-22DA7BCF13D5">
+<sourceConnName>docker-SCOTT</sourceConnName>
+<sourceObjSchema>REP</sourceObjSchema>
+<sourceObjName>REP_NAME</sourceObjName>
+<createdBy>linakim</createdBy>
+<createdTime>2020-06-07 12:48:54 UTC</createdTime>
+<commentInRDBMS><![CDATA[대표자명]]></commentInRDBMS>
+<ownerDesignName>modeling</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>20 BYTE</dataTypeSize>
+<ownDataTypeParameters>20 BYTE,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+</columns>
+<indexes itemClass="oracle.dbtools.crest.model.design.relational.Index">
+<ind_PK_UK id="2B322A00-697E-2318-53ED-7B6EE3BDCBD9" name="PK_REP">
+<sourceConnName>docker-SCOTT</sourceConnName>
+<sourceObjSchema>SCOTT</sourceObjSchema>
+<sourceObjName>PK_REP</sourceObjName>
+<createdBy>linakim</createdBy>
+<createdTime>2020-06-07 12:48:57 UTC</createdTime>
+<ownerDesignName>modeling</ownerDesignName>
+<pk>true</pk>
+<indexState>Primary Constraint</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="4EBDF4F8-8B89-B048-9636-4C8B20547CFA"/>
+<colUsage columnID="7E0E6FC3-6AAB-ADF3-8EA8-22DA7BCF13D5"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="1E3A3376-965A-4C1B-3CA6-6FAFDF316589" schemaObject="46EDA0A3-B1D4-46E7-96DB-5EAB25FE3991" name="PK_REP">
+<sourceConnName>docker-SCOTT</sourceConnName>
+<sourceObjSchema>SCOTT</sourceObjSchema>
+<sourceObjName>PK_REP</sourceObjName>
+<createdBy>linakim</createdBy>
+<createdTime>2020-06-07 12:48:56 UTC</createdTime>
+<ownerDesignName>modeling</ownerDesignName>
+<indexState>Unique Plain Index</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="4EBDF4F8-8B89-B048-9636-4C8B20547CFA"/>
+<colUsage columnID="7E0E6FC3-6AAB-ADF3-8EA8-22DA7BCF13D5"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="C467E911-6408-B5AB-2252-AA5B6130158A" name="FK_CORP_TO_REP">
+<createdBy>linakim</createdBy>
+<createdTime>2020-06-07 12:48:57 UTC</createdTime>
+<ownerDesignName>modeling</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="4EBDF4F8-8B89-B048-9636-4C8B20547CFA"/>
+</indexColumnUsage>
+</ind_PK_UK>
+</indexes>
+</Table>

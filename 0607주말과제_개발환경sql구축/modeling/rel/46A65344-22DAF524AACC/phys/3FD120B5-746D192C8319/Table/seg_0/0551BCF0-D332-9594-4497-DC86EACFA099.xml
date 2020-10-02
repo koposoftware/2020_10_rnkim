@@ -1,0 +1,72 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<TableProxyOraclev12c class="oracle.dbtools.crest.model.design.storage.oracle.v12c.TableProxyOraclev12c" name="LOAN_DOC" directorySegmentName="seg_0" id="0551BCF0-D332-9594-4497-DC86EACFA099">
+<createdBy>linakim</createdBy>
+<createdTime>2020-06-07 12:48:53 UTC</createdTime>
+<ownerDesignName>modeling</ownerDesignName>
+<schemaObject>46EDA0A3-B1D4-46E7-96DB-5EAB25FE3991</schemaObject>
+<logging>YES</logging>
+<partitionedRowMovement>DISABLE</partitionedRowMovement>
+<segment>1CBD980A-DBDA-5B65-88C8-877D5F10D17C</segment>
+<tableSpace>41F2DE3A-60A3-EC2F-D1DC-43ECAD5C3F8B</tableSpace>
+<temporaryChanged>false</temporaryChanged>
+<accessDriverType>oracle_loader</accessDriverType>
+<rejectLimit></rejectLimit>
+<inMemory>NO</inMemory>
+<columnProxies itemClass="oracle.dbtools.crest.model.design.storage.oracle.v12c.ColumnProxyOraclev12c">
+<ColumnProxy name="UPLOAD_DATE" id="260FF63E-3983-DA7D-9D03-BA4196CCD76E">
+<createdBy>linakim</createdBy>
+<createdTime>2020-06-07 12:48:54 UTC</createdTime>
+<ownerDesignName>modeling</ownerDesignName>
+</ColumnProxy>
+<ColumnProxy name="BY_WHOM" id="4E9AF7B6-CB46-E676-E304-E039138CBEA2">
+<createdBy>linakim</createdBy>
+<createdTime>2020-06-07 12:48:54 UTC</createdTime>
+<ownerDesignName>modeling</ownerDesignName>
+</ColumnProxy>
+<ColumnProxy name="FILE_NAME" id="5A31DBDE-BDF1-957E-CEE9-F14D8DA312C3">
+<createdBy>linakim</createdBy>
+<createdTime>2020-06-07 12:48:54 UTC</createdTime>
+<ownerDesignName>modeling</ownerDesignName>
+</ColumnProxy>
+<ColumnProxy name="APP_NO" id="9544355D-00AC-F3B0-42A2-0AC4782F03E9">
+<createdBy>linakim</createdBy>
+<createdTime>2020-06-07 12:48:54 UTC</createdTime>
+<ownerDesignName>modeling</ownerDesignName>
+</ColumnProxy>
+<ColumnProxy name="DOC_TYPE" id="BA360529-9467-5516-C063-5F7B516CC4D7">
+<createdBy>linakim</createdBy>
+<createdTime>2020-06-07 12:48:54 UTC</createdTime>
+<ownerDesignName>modeling</ownerDesignName>
+</ColumnProxy>
+</columnProxies>
+<indexProxies>
+<IndexProxy class="oracle.dbtools.crest.model.design.storage.oracle.v10g.IndexProxyOraclev10g" name="PK_LOAN_DOC" id="9C9DB1EB-F8D9-9958-724B-0869788637B0">
+<createdBy>linakim</createdBy>
+<createdTime>2020-06-07 12:48:56 UTC</createdTime>
+<ownerDesignName>modeling</ownerDesignName>
+<schemaObject>46EDA0A3-B1D4-46E7-96DB-5EAB25FE3991</schemaObject>
+<segment>3BBC5A7A-CC71-AE68-700F-E0071F008158</segment>
+<tableSpace>41F2DE3A-60A3-EC2F-D1DC-43ECAD5C3F8B</tableSpace>
+</IndexProxy>
+</indexProxies>
+<foreignKeys>
+<ForeignKey class="oracle.dbtools.crest.model.design.storage.oracle.v10g.FKProxyOraclev10g" name="FK_LOAN_WAITING_TO_LOAN_DOC" id="42123F27-D465-77C8-08FE-7DDADF10B78C">
+<createdBy>linakim</createdBy>
+<createdTime>2020-06-07 12:48:57 UTC</createdTime>
+<ownerDesignName>modeling</ownerDesignName>
+</ForeignKey>
+</foreignKeys>
+<primaryKeys>
+<PrimaryKey class="oracle.dbtools.crest.model.design.storage.oracle.v10g.PKProxyOraclev10g" name="PK_LOAN_DOC" id="2C87151E-10E0-5FC6-6EB2-81EC5E498F6D">
+<createdBy>linakim</createdBy>
+<createdTime>2020-06-07 12:48:57 UTC</createdTime>
+<ownerDesignName>modeling</ownerDesignName>
+<segment>3BBC5A7A-CC71-AE68-700F-E0071F008158</segment>
+<tableSpace>41F2DE3A-60A3-EC2F-D1DC-43ECAD5C3F8B</tableSpace>
+<existingIndex>9C9DB1EB-F8D9-9958-724B-0869788637B0</existingIndex>
+<indexSegment>3BBC5A7A-CC71-AE68-700F-E0071F008158</indexSegment>
+<indexSort>SORTED</indexSort>
+<usingIndex>BY INDEX NAME</usingIndex>
+</PrimaryKey>
+</primaryKeys>
+</TableProxyOraclev12c>

@@ -1,0 +1,19 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<FKIndexAssociation class="oracle.dbtools.crest.model.design.relational.FKIndexAssociation" directorySegmentName="seg_0" id="0B555C5C-A0A8-9046-96D1-F74E3D70598D" containerWithKeyObject="B77BEB26-A133-ED69-3532-6E8FE9FE7C79" localFKIndex="1064BA7D-9B4A-F888-5F59-D117FB63AF68" name="FK_CORP_TO_LOAN_WAITING">
+<sourceConnName>docker-SCOTT</sourceConnName>
+<sourceObjSchema>SCOTT</sourceObjSchema>
+<sourceObjName>FK_CORP_TO_LOAN_WAITING</sourceObjName>
+<createdBy>linakim</createdBy>
+<createdTime>2020-06-07 12:48:57 UTC</createdTime>
+<ownerDesignName>modeling</ownerDesignName>
+<referredTableLongName>SCOTT.CORP</referredTableLongName>
+<deleteRule>NO ACTION</deleteRule>
+<referredTableID>C27932DD-E854-5C04-6A89-70FE68C1F9B7</referredTableID>
+<keyObject>DBA1F625-959E-D721-D186-76FDFFBAED2F</keyObject>
+<referredKeyID>DBA1F625-959E-D721-D186-76FDFFBAED2F</referredKeyID>
+<mandatory>true</mandatory>
+<refColNames>CORP_ID</refColNames>
+<transferable>true</transferable>
+<rely>false</rely>
+<columnDependencyConstraintGenerateInDDL>true</columnDependencyConstraintGenerateInDDL>
+</FKIndexAssociation>

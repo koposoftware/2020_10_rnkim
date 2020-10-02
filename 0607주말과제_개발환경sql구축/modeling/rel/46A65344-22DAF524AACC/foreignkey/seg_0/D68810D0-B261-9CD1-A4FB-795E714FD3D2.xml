@@ -1,0 +1,19 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<FKIndexAssociation class="oracle.dbtools.crest.model.design.relational.FKIndexAssociation" directorySegmentName="seg_0" id="D68810D0-B261-9CD1-A4FB-795E714FD3D2" containerWithKeyObject="C7595158-EF60-C9AB-3C58-728FFAFA7457" localFKIndex="C6972EEB-C2D5-2A4D-08E5-22F6B4A29561" name="FK_LOAN_WAIT_TO_APP_ASS">
+<sourceConnName>docker-SCOTT</sourceConnName>
+<sourceObjSchema>SCOTT</sourceObjSchema>
+<sourceObjName>FK_LOAN_WAIT_TO_APP_ASS</sourceObjName>
+<createdBy>linakim</createdBy>
+<createdTime>2020-06-07 12:48:57 UTC</createdTime>
+<ownerDesignName>modeling</ownerDesignName>
+<referredTableLongName>SCOTT.LOAN_WAITING</referredTableLongName>
+<deleteRule>NO ACTION</deleteRule>
+<referredTableID>B77BEB26-A133-ED69-3532-6E8FE9FE7C79</referredTableID>
+<keyObject>D63793FD-45E9-CE39-0CAF-6986AA527229</keyObject>
+<referredKeyID>D63793FD-45E9-CE39-0CAF-6986AA527229</referredKeyID>
+<mandatory>true</mandatory>
+<refColNames>APP_NO</refColNames>
+<transferable>true</transferable>
+<rely>false</rely>
+<columnDependencyConstraintGenerateInDDL>true</columnDependencyConstraintGenerateInDDL>
+</FKIndexAssociation>

@@ -1,0 +1,134 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_0" id="EA00963E-417D-0AA0-18AA-AF3A1F8869D0" schemaObject="46EDA0A3-B1D4-46E7-96DB-5EAB25FE3991" name="ICM_STMT">
+<sourceConnName>docker-SCOTT</sourceConnName>
+<sourceObjSchema>SCOTT</sourceObjSchema>
+<sourceObjName>ICM_STMT</sourceObjName>
+<createdBy>linakim</createdBy>
+<createdTime>2020-06-07 12:48:53 UTC</createdTime>
+<commentInRDBMS><![CDATA[손익계산서]]></commentInRDBMS>
+<ownerDesignName>modeling</ownerDesignName>
+<allowColumnReorder>false</allowColumnReorder>
+<existDependencyGenerateInDDl>true</existDependencyGenerateInDDl>
+<parsed>true</parsed>
+<columns itemClass="oracle.dbtools.crest.model.design.relational.Column">
+<Column name="CORP_ID" id="89400DD2-882F-4668-8774-A6D9D3DA4581">
+<sourceConnName>docker-SCOTT</sourceConnName>
+<sourceObjSchema>ICM_STMT</sourceObjSchema>
+<sourceObjName>CORP_ID</sourceObjName>
+<createdBy>linakim</createdBy>
+<createdTime>2020-06-07 12:48:54 UTC</createdTime>
+<commentInRDBMS><![CDATA[기업아이디]]></commentInRDBMS>
+<ownerDesignName>modeling</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>12 BYTE</dataTypeSize>
+<ownDataTypeParameters>12 BYTE,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="81F5D038-3D87-92CC-EE23-E49242D5552A" referredColumn="083213B9-B6EA-95D8-A451-5DFAC4DA9980"/>
+</associations>
+</Column>
+<Column name="TURN" id="6B038412-51FF-4600-C645-82A73A3D53A5">
+<sourceConnName>docker-SCOTT</sourceConnName>
+<sourceObjSchema>ICM_STMT</sourceObjSchema>
+<sourceObjName>TURN</sourceObjName>
+<createdBy>linakim</createdBy>
+<createdTime>2020-06-07 12:48:54 UTC</createdTime>
+<commentInRDBMS><![CDATA[회차]]></commentInRDBMS>
+<ownerDesignName>modeling</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="81F5D038-3D87-92CC-EE23-E49242D5552A" referredColumn="3231BE67-6BF2-8469-5775-FD5725DDE9F9"/>
+</associations>
+</Column>
+<Column name="SALES" id="4F01DE5D-98F4-C61D-C626-C100EF808529">
+<sourceConnName>docker-SCOTT</sourceConnName>
+<sourceObjSchema>ICM_STMT</sourceObjSchema>
+<sourceObjName>SALES</sourceObjName>
+<createdBy>linakim</createdBy>
+<createdTime>2020-06-07 12:48:54 UTC</createdTime>
+<commentInRDBMS><![CDATA[매출액]]></commentInRDBMS>
+<ownerDesignName>modeling</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="BUSI_PROFITS" id="D18D6FFE-A44B-7E2B-68AF-EFBA0BD71BA5">
+<sourceConnName>docker-SCOTT</sourceConnName>
+<sourceObjSchema>ICM_STMT</sourceObjSchema>
+<sourceObjName>BUSI_PROFITS</sourceObjName>
+<createdBy>linakim</createdBy>
+<createdTime>2020-06-07 12:48:54 UTC</createdTime>
+<commentInRDBMS><![CDATA[영업이익]]></commentInRDBMS>
+<ownerDesignName>modeling</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="NET_INCM" id="9BA222ED-DC03-689B-D6EE-B737B43B912A">
+<sourceConnName>docker-SCOTT</sourceConnName>
+<sourceObjSchema>ICM_STMT</sourceObjSchema>
+<sourceObjName>NET_INCM</sourceObjName>
+<createdBy>linakim</createdBy>
+<createdTime>2020-06-07 12:48:54 UTC</createdTime>
+<commentInRDBMS><![CDATA[당기순이익]]></commentInRDBMS>
+<ownerDesignName>modeling</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+</columns>
+<indexes itemClass="oracle.dbtools.crest.model.design.relational.Index">
+<ind_PK_UK id="370A5A29-06BA-91FB-2728-29D24322D7B3" name="PK_ICM_STMT">
+<sourceConnName>docker-SCOTT</sourceConnName>
+<sourceObjSchema>SCOTT</sourceObjSchema>
+<sourceObjName>PK_ICM_STMT</sourceObjName>
+<createdBy>linakim</createdBy>
+<createdTime>2020-06-07 12:48:57 UTC</createdTime>
+<ownerDesignName>modeling</ownerDesignName>
+<pk>true</pk>
+<indexState>Primary Constraint</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="89400DD2-882F-4668-8774-A6D9D3DA4581"/>
+<colUsage columnID="6B038412-51FF-4600-C645-82A73A3D53A5"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="D1016EE4-CBC3-0576-EE24-0E75ACFAAE1A" schemaObject="46EDA0A3-B1D4-46E7-96DB-5EAB25FE3991" name="PK_ICM_STMT">
+<sourceConnName>docker-SCOTT</sourceConnName>
+<sourceObjSchema>SCOTT</sourceObjSchema>
+<sourceObjName>PK_ICM_STMT</sourceObjName>
+<createdBy>linakim</createdBy>
+<createdTime>2020-06-07 12:48:55 UTC</createdTime>
+<ownerDesignName>modeling</ownerDesignName>
+<indexState>Unique Plain Index</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="89400DD2-882F-4668-8774-A6D9D3DA4581"/>
+<colUsage columnID="6B038412-51FF-4600-C645-82A73A3D53A5"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="95BEFD27-3F7F-39EE-6BCC-11E283DA5B53" name="FK_FNC_STMT_TO_ICM_STMT">
+<createdBy>linakim</createdBy>
+<createdTime>2020-06-07 12:48:57 UTC</createdTime>
+<ownerDesignName>modeling</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="89400DD2-882F-4668-8774-A6D9D3DA4581"/>
+<colUsage columnID="6B038412-51FF-4600-C645-82A73A3D53A5"/>
+</indexColumnUsage>
+</ind_PK_UK>
+</indexes>
+</Table>

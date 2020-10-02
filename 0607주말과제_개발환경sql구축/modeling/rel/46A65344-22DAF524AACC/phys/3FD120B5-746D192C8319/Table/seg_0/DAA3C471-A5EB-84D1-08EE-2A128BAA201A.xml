@@ -1,0 +1,75 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<TableProxyOraclev12c class="oracle.dbtools.crest.model.design.storage.oracle.v12c.TableProxyOraclev12c" name="BANK_EMP" directorySegmentName="seg_0" id="DAA3C471-A5EB-84D1-08EE-2A128BAA201A">
+<createdBy>linakim</createdBy>
+<createdTime>2020-06-07 12:48:53 UTC</createdTime>
+<ownerDesignName>modeling</ownerDesignName>
+<schemaObject>46EDA0A3-B1D4-46E7-96DB-5EAB25FE3991</schemaObject>
+<logging>YES</logging>
+<partitionedRowMovement>DISABLE</partitionedRowMovement>
+<segment>1CBD980A-DBDA-5B65-88C8-877D5F10D17C</segment>
+<tableSpace>41F2DE3A-60A3-EC2F-D1DC-43ECAD5C3F8B</tableSpace>
+<temporaryChanged>false</temporaryChanged>
+<accessDriverType>oracle_loader</accessDriverType>
+<rejectLimit></rejectLimit>
+<inMemory>NO</inMemory>
+<columnProxies itemClass="oracle.dbtools.crest.model.design.storage.oracle.v12c.ColumnProxyOraclev12c">
+<ColumnProxy name="EMPNO" id="068E7523-6647-7197-1C15-D3F6A70AD630">
+<createdBy>linakim</createdBy>
+<createdTime>2020-06-07 12:48:54 UTC</createdTime>
+<ownerDesignName>modeling</ownerDesignName>
+</ColumnProxy>
+<ColumnProxy name="DEPTNO" id="2B3AF24F-D8B0-11AC-E3F0-C42401522C04">
+<createdBy>linakim</createdBy>
+<createdTime>2020-06-07 12:48:54 UTC</createdTime>
+<ownerDesignName>modeling</ownerDesignName>
+</ColumnProxy>
+<ColumnProxy name="TITLE" id="52CFD536-A745-4F20-45D2-2D55D5FE3649">
+<createdBy>linakim</createdBy>
+<createdTime>2020-06-07 12:48:54 UTC</createdTime>
+<ownerDesignName>modeling</ownerDesignName>
+</ColumnProxy>
+<ColumnProxy name="ENAME" id="5D8681D9-8CF0-06E6-68B1-81215283BB10">
+<createdBy>linakim</createdBy>
+<createdTime>2020-06-07 12:48:54 UTC</createdTime>
+<ownerDesignName>modeling</ownerDesignName>
+</ColumnProxy>
+<ColumnProxy name="EMAIL" id="8796B0A6-E90E-77E6-A72B-50B8445A60F9">
+<createdBy>linakim</createdBy>
+<createdTime>2020-06-07 12:48:54 UTC</createdTime>
+<ownerDesignName>modeling</ownerDesignName>
+</ColumnProxy>
+<ColumnProxy name="BRANCH_NO" id="99A97CC8-E2FF-AA8E-5F92-99B93A0E4EAA">
+<createdBy>linakim</createdBy>
+<createdTime>2020-06-07 12:48:54 UTC</createdTime>
+<ownerDesignName>modeling</ownerDesignName>
+</ColumnProxy>
+<ColumnProxy name="PHONE" id="A0138416-CE40-44EC-EE37-E4C079FCEB83">
+<createdBy>linakim</createdBy>
+<createdTime>2020-06-07 12:48:54 UTC</createdTime>
+<ownerDesignName>modeling</ownerDesignName>
+</ColumnProxy>
+</columnProxies>
+<indexProxies>
+<IndexProxy class="oracle.dbtools.crest.model.design.storage.oracle.v10g.IndexProxyOraclev10g" name="PK_BANK_EMP" id="441DBD78-57B2-9F26-38AA-15B1FAEACD22">
+<createdBy>linakim</createdBy>
+<createdTime>2020-06-07 12:48:55 UTC</createdTime>
+<ownerDesignName>modeling</ownerDesignName>
+<schemaObject>46EDA0A3-B1D4-46E7-96DB-5EAB25FE3991</schemaObject>
+<segment>3BBC5A7A-CC71-AE68-700F-E0071F008158</segment>
+<tableSpace>41F2DE3A-60A3-EC2F-D1DC-43ECAD5C3F8B</tableSpace>
+</IndexProxy>
+</indexProxies>
+<primaryKeys>
+<PrimaryKey class="oracle.dbtools.crest.model.design.storage.oracle.v10g.PKProxyOraclev10g" name="PK_BANK_EMP" id="471EECAA-C23C-6BB8-B3CB-F34314B638C4">
+<createdBy>linakim</createdBy>
+<createdTime>2020-06-07 12:48:56 UTC</createdTime>
+<ownerDesignName>modeling</ownerDesignName>
+<segment>3BBC5A7A-CC71-AE68-700F-E0071F008158</segment>
+<tableSpace>41F2DE3A-60A3-EC2F-D1DC-43ECAD5C3F8B</tableSpace>
+<existingIndex>441DBD78-57B2-9F26-38AA-15B1FAEACD22</existingIndex>
+<indexSegment>3BBC5A7A-CC71-AE68-700F-E0071F008158</indexSegment>
+<indexSort>SORTED</indexSort>
+<usingIndex>BY INDEX NAME</usingIndex>
+</PrimaryKey>
+</primaryKeys>
+</TableProxyOraclev12c>

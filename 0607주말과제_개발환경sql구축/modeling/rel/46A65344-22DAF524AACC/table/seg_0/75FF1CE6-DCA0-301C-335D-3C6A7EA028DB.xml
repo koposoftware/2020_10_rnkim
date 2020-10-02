@@ -1,0 +1,149 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_0" id="75FF1CE6-DCA0-301C-335D-3C6A7EA028DB" schemaObject="46EDA0A3-B1D4-46E7-96DB-5EAB25FE3991" name="LOAN_EVAL">
+<sourceConnName>docker-SCOTT</sourceConnName>
+<sourceObjSchema>SCOTT</sourceObjSchema>
+<sourceObjName>LOAN_EVAL</sourceObjName>
+<createdBy>linakim</createdBy>
+<createdTime>2020-06-07 12:48:53 UTC</createdTime>
+<commentInRDBMS><![CDATA[대출심사]]></commentInRDBMS>
+<ownerDesignName>modeling</ownerDesignName>
+<allowColumnReorder>false</allowColumnReorder>
+<existDependencyGenerateInDDl>true</existDependencyGenerateInDDl>
+<parsed>true</parsed>
+<columns itemClass="oracle.dbtools.crest.model.design.relational.Column">
+<Column name="APP_NO" id="9DE03348-510E-0E11-5302-0A1A0502B4EB">
+<sourceConnName>docker-SCOTT</sourceConnName>
+<sourceObjSchema>LOAN_EVAL</sourceObjSchema>
+<sourceObjName>APP_NO</sourceObjName>
+<createdBy>linakim</createdBy>
+<createdTime>2020-06-07 12:48:54 UTC</createdTime>
+<commentInRDBMS><![CDATA[신청번호]]></commentInRDBMS>
+<ownerDesignName>modeling</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>6 BYTE</dataTypeSize>
+<ownDataTypeParameters>6 BYTE,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="C6EFE1D1-2126-876B-B605-1155045C1367" referredColumn="ABB1C0DC-77DF-6392-B2BD-242BA7F8DAF9"/>
+</associations>
+</Column>
+<Column name="EVAL_STEP" id="0886210A-9135-9280-AAFA-6DD1E7B6870A">
+<sourceConnName>docker-SCOTT</sourceConnName>
+<sourceObjSchema>LOAN_EVAL</sourceObjSchema>
+<sourceObjName>EVAL_STEP</sourceObjName>
+<createdBy>linakim</createdBy>
+<createdTime>2020-06-07 12:48:54 UTC</createdTime>
+<commentInRDBMS><![CDATA[심사단계]]></commentInRDBMS>
+<ownerDesignName>modeling</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="EVAL_DATE" id="3DF8FB65-9763-3778-2903-D67FB95320E5">
+<sourceConnName>docker-SCOTT</sourceConnName>
+<sourceObjSchema>LOAN_EVAL</sourceObjSchema>
+<sourceObjName>EVAL_DATE</sourceObjName>
+<createdBy>linakim</createdBy>
+<createdTime>2020-06-07 12:48:54 UTC</createdTime>
+<commentInRDBMS><![CDATA[심사일]]></commentInRDBMS>
+<ownerDesignName>modeling</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT007</logicalDatatype>
+<dataTypeSize>7</dataTypeSize>
+<ownDataTypeParameters>7,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="EVAL_RESULT" id="3DDA8727-E070-F4DB-C684-031BCB145DA6">
+<sourceConnName>docker-SCOTT</sourceConnName>
+<sourceObjSchema>LOAN_EVAL</sourceObjSchema>
+<sourceObjName>EVAL_RESULT</sourceObjName>
+<createdBy>linakim</createdBy>
+<createdTime>2020-06-07 12:48:54 UTC</createdTime>
+<commentInRDBMS><![CDATA[심사결과]]></commentInRDBMS>
+<ownerDesignName>modeling</ownerDesignName>
+<constraintName>CHK_LOAN_EVAL</constraintName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>1 BYTE</dataTypeSize>
+<checkConstraint>
+<implementationDef dbType="Generic Constraint" definition="
+			eval_result
+			IN (
+				&apos;P&apos;, &apos;F&apos;
+			)
+		"/>
+<implementationDef dbType="Oracle Database 12c" definition="
+			eval_result
+			IN (
+				&apos;P&apos;, &apos;F&apos;
+			)
+		"/>
+</checkConstraint>
+<ownDataTypeParameters>1 BYTE,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="EVAL_COMMENT" id="0507BA55-74FF-F50E-6A25-F8CE3FC6DC91">
+<sourceConnName>docker-SCOTT</sourceConnName>
+<sourceObjSchema>LOAN_EVAL</sourceObjSchema>
+<sourceObjName>EVAL_COMMENT</sourceObjName>
+<createdBy>linakim</createdBy>
+<createdTime>2020-06-07 12:48:54 UTC</createdTime>
+<commentInRDBMS><![CDATA[심사코멘트]]></commentInRDBMS>
+<ownerDesignName>modeling</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>100 BYTE</dataTypeSize>
+<ownDataTypeParameters>100 BYTE,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+</columns>
+<indexes itemClass="oracle.dbtools.crest.model.design.relational.Index">
+<ind_PK_UK id="AE000870-0F4A-62F7-F573-17CE4C14E72B" name="PK_LOAN_EVAL">
+<sourceConnName>docker-SCOTT</sourceConnName>
+<sourceObjSchema>SCOTT</sourceObjSchema>
+<sourceObjName>PK_LOAN_EVAL</sourceObjName>
+<createdBy>linakim</createdBy>
+<createdTime>2020-06-07 12:48:57 UTC</createdTime>
+<ownerDesignName>modeling</ownerDesignName>
+<pk>true</pk>
+<indexState>Primary Constraint</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="9DE03348-510E-0E11-5302-0A1A0502B4EB"/>
+<colUsage columnID="0886210A-9135-9280-AAFA-6DD1E7B6870A"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="44EA09A8-0BFF-6FF2-1368-92EBEF0FA841" schemaObject="46EDA0A3-B1D4-46E7-96DB-5EAB25FE3991" name="PK_LOAN_EVAL">
+<sourceConnName>docker-SCOTT</sourceConnName>
+<sourceObjSchema>SCOTT</sourceObjSchema>
+<sourceObjName>PK_LOAN_EVAL</sourceObjName>
+<createdBy>linakim</createdBy>
+<createdTime>2020-06-07 12:48:56 UTC</createdTime>
+<ownerDesignName>modeling</ownerDesignName>
+<indexState>Unique Plain Index</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="9DE03348-510E-0E11-5302-0A1A0502B4EB"/>
+<colUsage columnID="0886210A-9135-9280-AAFA-6DD1E7B6870A"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="102FEC34-9E46-E82F-CE77-E6900040CBCE" name="FK_LOAN_WAITING_TO_LOAN_EVAL">
+<createdBy>linakim</createdBy>
+<createdTime>2020-06-07 12:48:57 UTC</createdTime>
+<ownerDesignName>modeling</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="9DE03348-510E-0E11-5302-0A1A0502B4EB"/>
+</indexColumnUsage>
+</ind_PK_UK>
+</indexes>
+</Table>
