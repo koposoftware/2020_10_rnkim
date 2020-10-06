@@ -37,7 +37,7 @@
 | | Server - Openstack
 |자격증|  |
 |수상| |
-|특기사항|  TOEFL 104 | OPIC(영어) AL | OPIC(스페인어) AL |
+|특기사항|  TOEFL 104, OPIC(영어) AL, OPIC(스페인어) AL |
 
 # 5. 기타
 그외 프로젝트를 더욱 설명할수 있는 것들을 추가하세요
