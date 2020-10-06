@@ -32,7 +32,7 @@
 본인 소개를 추가하세요
 <br>
 
-|이름 |김리나|![gdKO](/2060340013.jpg)|
+|이름 |김리나|![2060340013](/2060340013.jpg)|
 |연락처 | tmxkvk94(@)gmail.com|
 |skill set| Frontend - HTML, CSS, Javascript|
 | | Backend - Java, Spring, Oracle, MySQL, Python|
