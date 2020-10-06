@@ -53,16 +53,16 @@
 
 
 # 3. 사용기술
-● Openstack 프라이빗 클라우드 구축
-● Machine Learning(regression)
-● Spring-MVC
-● 기업공시사이트(DART) Open API를 활용한 크롤링 및 데이터 전처리
-● 대용량데이터 처리 Indexing 
-● 엑셀데이터 리딩 (apache-POI 라이브러리 사용)
-● Tableau를 이용한 데이터 시각화
-● Jython 라이브러리를 이용한 파이썬스크립트 연동
-● Java Scheduler 를 활용한 자동이체 이자납부 로직 구현
-● TwilioAPI를 이용한 문자전송 구현 
+- Openstack 프라이빗 클라우드 구축
+- Machine Learning(regression)
+- Spring-MVC
+- 기업공시사이트(DART) Open API를 활용한 크롤링 및 데이터 전처리
+- 대용량데이터 처리 Indexing 
+- 엑셀데이터 리딩 (apache-POI 라이브러리 사용)
+- Tableau를 이용한 데이터 시각화
+- Jython 라이브러리를 이용한 파이썬스크립트 연동
+- Java Scheduler 를 활용한 자동이체 이자납부 로직 구현
+- TwilioAPI를 이용한 문자전송 구현 
 
 # 4. 프로젝트 결과
 
