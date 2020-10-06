@@ -21,14 +21,9 @@
    <img src="발표자료title.png"/>[발표자료](/BEONE_git.pdf)<br>
 
 ## 시연 동영상 
-
-   <iframe id="ytplayer" type="text/html" width="640" height="360" src="https://www.youtube.com/embed/6LxbdIjWP04" frameborder="0"></iframe>
-   
-<iframe width="640" height="360" src="https://www.youtube.com/embed/MRmPn7pdGP8" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-<br>
 <iframe width="560" height="315" src="https://www.youtube.com/embed/MRmPn7pdGP8" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-<br>
 
+ 
 # 4. 본인 소개
 
 본인 소개를 추가하세요
