@@ -1,0 +1,8 @@
+package beone.emp.service;
+
+import beone.emp.vo.EmpVO;
+
+public interface EmpService {
+
+	EmpVO login(EmpVO emp);
+}

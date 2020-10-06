@@ -1,0 +1,21 @@
+package beone.emp.dao;
+
+import org.mybatis.spring.SqlSessionTemplate;
+import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.stereotype.Repository;
+
+import beone.emp.vo.EmpVO;
+
+@Repository
+public class EmpDAOImpl implements EmpDAO {
+
+	@Autowired
+	private SqlSessionTemplate sqlSession;
+	
+	@Override
+	public EmpVO login(EmpVO emp) {
+		EmpVO empVO = sqlSession.selectOne("emp.dao.EmpDAO.login", emp);
+		return empVO;
+	}
+
+}

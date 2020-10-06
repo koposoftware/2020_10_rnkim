@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans" 
+	   xmlns:aop="http://www.springframework.org/schema/aop"
+	   xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	   xsi:schemaLocation="http://www.springframework.org/schema/beans
+	   					   http://www.springframework.org/schema/beans/spring-beans.xsd
+	   					   http://www.springframework.org/schema/aop
+	   					   http://www.springframework.org/schema/aop/spring-aop.xsd " >
+	   					   
+	<bean class="aop.xml.Action" id="action" />	   					   
+	<bean class="aop.xml.Programmer" id="programmer" />	
+	<bean class="aop.xml.Designer" id="designer" />	
+	<bean class="aop.xml.Manager" id="manager" />	
+	
+	<aop:config>
+		<aop:pointcut expression="execution(* aop.xml.*.work())" id="pointcut01"></aop:pointcut>
+		<aop:aspect ref="action">
+			<aop:before method="gotoOffice" 
+						pointcut-ref="pointcut01"/>
+			<aop:after method="getoffOffice"
+					   pointcut-ref="pointcut01"/>
+			<!-- <aop:before method="gotoOffice" 
+						pointcut="execution(public void aop.xml.*.work())"/>
+			<aop:after method="getoffOffice"
+					   pointcut="execution(* aop.xml.*.work())" /> -->
+		</aop:aspect>
+	</aop:config>					   
+</beans>

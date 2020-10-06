@@ -1,0 +1,5 @@
+#NOTE: This is a Maven Resolver internal implementation file, its format can be changed without prior notice.
+#Wed Sep 30 02:01:59 KST 2020
+jython-standalone-2.7.1.jar>central=
+jython-standalone-2.7.1-sources.jar>central=
+jython-standalone-2.7.1.pom>central=

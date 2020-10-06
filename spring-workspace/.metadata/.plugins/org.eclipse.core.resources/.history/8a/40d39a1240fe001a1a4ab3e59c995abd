@@ -1,0 +1,5 @@
+package beone.util;
+
+public class Logback {
+
+}

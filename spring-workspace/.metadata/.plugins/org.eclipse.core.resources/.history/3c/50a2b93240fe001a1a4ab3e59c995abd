@@ -1,0 +1,29 @@
+package beone.util;
+
+import org.slf4j.Logger;
+import org.slf4j.LoggerFactory;
+import org.springframework.stereotype.Component;
+
+import beone.corp.vo.CorpVO;
+
+@Component
+public class Logback {
+
+	private static final Logger log = LoggerFactory.getLogger(Logback.class);
+	
+	public static void main(String[] args) {
+		new Logback().test();
+	}
+	
+	public void test() {
+		CorpVO corp = new CorpVO();
+		corp.setName("MGM 컴퍼니");
+		corp.setBizrNo("1111");
+		
+		log.debug("debug~!");
+		log.info("info!!");
+		log.warn("warn!");	
+		log.error("error!");
+	}
+	
+}
